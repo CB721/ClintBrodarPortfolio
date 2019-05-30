@@ -1,3 +1,5 @@
+#Clint Brodar Portfolio
+
 A portfolio of all my highlighted projects, skills and work experience.
 
 The home page includes a picture of me as well as an image of Seattle.  There are also links to my GitHub repository and LinkedIn profile.
@@ -10,4 +12,4 @@ The Projects section includes pictures and descriptions of projects I've done or
 
 The Blog section includes a picture and link to my LinkedIn posts.
 
-The Contact section includes my contact information, a contact form, and a Google Map of Seattle.
+The Contact section includes my contact information and a contact form.
