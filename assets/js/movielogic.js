@@ -1,5 +1,4 @@
 //every year, add to views of star wars
-    
     //variable for current date
     var currentDayMonth = moment().format("DD, MMM, YYYY");
     //variable for current year
@@ -8,17 +7,15 @@
     var originialTime = "04, May, 2018";
     //variable for hours
     var starWarsHours = 233;
-
+    //variable for yearly hour additions
+    var yearHours = 20;
+    // current hours
+    var currentHours;
     // Difference between the times
     var timeDifference = moment().diff(moment(originialTime), 'years');
-    console.log(timeDifference);
-
-    if (timeDifference === 1) {
-        starWarsHours + 20;
-        console.log(starWarsHours);
+    //for every additional year, add 20 hours
+    for (var i = 0; i < timeDifference; i ++) {
+        starWarsHours += yearHours;
     }
-
-    //update every may 4th
-    //add 20 to hours total
     //push to html
     $("#starWarsHours").prepend(starWarsHours + " ");
