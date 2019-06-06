@@ -5,7 +5,7 @@
     var currentYear = moment().format("YYYY");
     //variable for may 4th 2019
     var originialTime = "04, May, 2018";
-    //variable for hours
+    //variable for hours from inital tally
     var starWarsHours = 233;
     //variable for yearly hour additions
     var yearHours = 20;
