@@ -1,5 +1,3 @@
-#Clint Brodar Portfolio
-
 A portfolio of all my highlighted projects, skills and work experience.
 
 The home page includes a picture of me as well as an image of Seattle.  There are also links to my GitHub repository and LinkedIn profile.
