@@ -735,6 +735,65 @@
                                 </div>
                             </div>
 
+                            <!-- Bamazon App -->
+                            <div class="col col-d-6 col-t-6 col-m-12 grid-item webDev border-line-h">
+                                <div class="box-item">
+                                    <div class="image">
+                                        <a href="#popup-3" class="has-popup-media">
+                                            <img src="assets/images/Bamazon-App-Walkthrough.gif" alt="bamazon">
+                                            <span class="info">
+                                                <span class="ion ion-images"></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="desc">
+                                        <a href="#popup-3" class="name has-popup-media">Bamazon</a>
+                                        <div class="category">Back End Development</div>
+                                    </div>
+                                    <div id="popup-3" class="popup-box mfp-fade mfp-hide">
+                                        <div class="content">
+                                            <div class="image">
+                                                <img src="assets/images/Bamazon-App-Walkthrough.gif" alt="bamazon">
+                                            </div>
+                                            <div class="desc">
+                                                <div class="post-box">
+                                                    <h1>Bamazon</h1>
+                                                    <div class="blog-detail">Web Development</div>
+                                                    <div class="blog-content">
+                                                        <p>
+                                                            Bamazon is a CLI app where the user can view and purchase
+                                                            products. The app will take in the order and remove the
+                                                            stock from the inventory.
+                                                        </p>
+                                                        <blockquote>
+                                                            "I want one place where I can shop online and I can find all
+                                                            kinds of different and unique products."
+                                                        </blockquote>
+                                                        <p>
+                                                            This app was my first experience working with SQL. Writing
+                                                            commands in SQL felt a lot more like writing in English
+                                                            compared to my experience writing in JavaScript.
+                                                        </p>
+                                                        <p>
+                                                            A challenging part of this project was passing the data
+                                                            along as the customer progresses through the stages of the
+                                                            app. Even though this app was through the command line, I
+                                                            wanted to make it as close to a modern-day e-commerce
+                                                            experience as possible. The main way I wanted to achieve
+                                                            this was creating a shopping cart for the user to add to.
+                                                        </p>
+                                                    </div>
+                                                    <a href="https://github.com/CB721/bamazon" class="button">
+                                                        <span class="text">View Project</span>
+                                                        <span class="arrow"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                             <!-- LIRI Node App -->
                             <div class="col col-d-6 col-t-6 col-m-12 grid-item webDev border-line-h">
                                 <div class="box-item">
@@ -775,7 +834,7 @@
                                                             For Spotify, the user types in node liri.js
                                                             spotify-this-song 'song name here' and it outputs the
                                                             following:
-                                                            <ul>
+                                                            <ul class="list-style">
                                                                 <li>Artist(s)</li>
                                                                 <li>The song name</li>
                                                                 <li>A preview link of the song</li>
@@ -790,7 +849,7 @@
                                                             For Bands in Town, the user types in node liri.js
                                                             concert-this 'artist/band name here' and it outputs the
                                                             following:
-                                                            <ul>
+                                                            <ul class="list-style">
                                                                 <li>Name of the venue</li>
                                                                 <li>Venue location</li>
                                                                 <li>Date of the Event</li>
@@ -803,7 +862,7 @@
                                                         <p>
                                                             For OMDB, the user types in node liri.js movie-this 'movie
                                                             name here' and it outputs the following:
-                                                            <ul>
+                                                            <ul class="list-style">
                                                                 <li>Title of the movie</li>
                                                                 <li>Year the movie came out</li>
                                                                 <li>IMDB Rating of the movie</li>
@@ -819,13 +878,27 @@
                                                                 alt="liri movie">
                                                         </div>
                                                         <p>
-                                                            This was my first project in Node. Working solely in the command line was different at first but, in the end, I found it much more efficient for testing in comparison to using the console log on a browser.
+                                                            This was my first project in Node. Working solely in the
+                                                            command line was different at first but, in the end, I found
+                                                            it much more efficient for testing in comparison to using
+                                                            the console log on a browser.
                                                         </p>
                                                         <p>
-                                                            One issue I ran into a couple of times while working on this project was referencing the results from the APIs.  In particular, getting the Rotten Tomatoes rating from OMDB was troublesome.  I kept getting [object Object] when I referenced it as response.data.Ratings.value.  Eventually, I found that I needed to go to the second index in Ratings and get that value.
+                                                            One issue I ran into a couple of times while working on this
+                                                            project was referencing the results from the APIs. In
+                                                            particular, getting the Rotten Tomatoes rating from OMDB was
+                                                            troublesome. I kept getting [object Object] when I
+                                                            referenced it as response.data.Ratings.value. Eventually, I
+                                                            found that I needed to go to the second index in Ratings and
+                                                            get that value.
                                                         </p>
                                                         <p>
-                                                            I challenged myself in this project to implement a log of all the searches in an easily accessible place.  The original assignment required that we log the searches to a text file, but I found that difficult to reference since you would have to have access to that text file.  To achieve this, I created a Firebase database and had every search logged there.
+                                                            I challenged myself in this project to implement a log of
+                                                            all the searches in an easily accessible place. The original
+                                                            assignment required that we log the searches to a text file,
+                                                            but I found that difficult to reference since you would have
+                                                            to have access to that text file. To achieve this, I created
+                                                            a Firebase database and had every search logged there.
                                                         </p>
                                                     </div>
                                                     <a href="https://github.com/CB721/liri-node-app" class="button">
