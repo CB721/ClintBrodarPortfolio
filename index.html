@@ -11,7 +11,8 @@
     <meta name="author" content="clint brodar" />
 
     <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
@@ -185,7 +186,7 @@
                                 </div>
                                 <div class="info-list">
                                     <ul>
-                                        <li><strong>Age . . . . .</strong> 26</li>
+                                        <li><strong>Age . . . . .</strong> 27</li>
                                         <li><strong>Address . . . . .</strong> Seattle, WA</li>
                                     </ul>
                                 </div>
@@ -248,7 +249,7 @@
                                     <!-- 20 hours -->
                                     <!-- Stories once per year since 2016 -->
                                     <!-- 10 hours -->
-                                        <!-- Hours populated by movielogic.js -->
+                                    <!-- Hours populated by movielogic.js -->
                                     <div class="name" id="starWarsHours">Hours Watching Star Wars</div>
                                 </div>
                             </div>
@@ -265,6 +266,7 @@
                             <div class="col col-d-3 col-t-3 col-m-6 border-line-v">
                                 <div class="fuct-item">
                                     <div class="icon"><span class="fas fa-umbrella-beach"></span></div>
+                                    <!-- Create link with drop pins for each major city I've visitied -->
                                     <div class="name">13 Trips Taken</div>
                                 </div>
                             </div>
@@ -722,8 +724,111 @@
                                                             the user address and their desired destination.
                                                         </p>
                                                     </div>
-                                                    <a href="https://cb721.github.io/Project-Batman/"
-                                                        class="button">
+                                                    <a href="https://cb721.github.io/Project-Batman/" class="button">
+                                                        <span class="text">View Project</span>
+                                                        <span class="arrow"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- LIRI Node App -->
+                            <div class="col col-d-6 col-t-6 col-m-12 grid-item webDev border-line-h">
+                                <div class="box-item">
+                                    <div class="image">
+                                        <a href="#popup-1" class="has-popup-media">
+                                            <img src="assets/images/liri-images/liri.gif" alt="liri" />
+                                            <span class="info">
+                                                <span class="ion ion-images"></span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="desc">
+                                        <a href="#popup-1" class="name has-popup-media">LIRI</a>
+                                        <div class="category">Back End Development</div>
+                                    </div>
+                                    <div id="popup-1" class="popup-box mfp-fade mfp-hide">
+                                        <div class="content">
+                                            <div class="image">
+                                                <img src="assets/images/liri-images/liri.gif" alt="liri">
+                                            </div>
+                                            <div class="desc">
+                                                <div class="post-box">
+                                                    <h1>LIRI Node Application</h1>
+                                                    <div class="blog-detail">Back End Development</div>
+                                                    <div class="blog-content">
+                                                        <p>
+                                                            LIRI (Language Interpretation and Recognition Interface) is
+                                                            a command line node app that will search for songs, concerts
+                                                            and movies. Songs are referenced using Spotify's API,
+                                                            concerts are referenced using Bands In Town's API and movies
+                                                            are referenced using OMDB.
+                                                        </p>
+                                                        <blockquote>
+                                                            "I have so many different apps for finding entertainment. It
+                                                            would be great to have one place I could look for it all."
+                                                        </blockquote>
+                                                        <p>
+                                                            For Spotify, the user types in node liri.js
+                                                            spotify-this-song 'song name here' and it outputs the
+                                                            following:
+                                                            <ul>
+                                                                <li>Artist(s)</li>
+                                                                <li>The song name</li>
+                                                                <li>A preview link of the song</li>
+                                                                <li>The album the song is from</li>
+                                                            </ul>
+                                                        </p>
+                                                        <div class="image">
+                                                            <img src="assets/images/liri-images/spotify-this-song.png"
+                                                                alt="liri spotify">
+                                                        </div>
+                                                        <p>
+                                                            For Bands in Town, the user types in node liri.js
+                                                            concert-this 'artist/band name here' and it outputs the
+                                                            following:
+                                                            <ul>
+                                                                <li>Name of the venue</li>
+                                                                <li>Venue location</li>
+                                                                <li>Date of the Event</li>
+                                                            </ul>
+                                                        </p>
+                                                        <div class="image">
+                                                            <img src="assets/images/liri-images/concert-this.png"
+                                                                alt="liri concerts">
+                                                        </div>
+                                                        <p>
+                                                            For OMDB, the user types in node liri.js movie-this 'movie
+                                                            name here' and it outputs the following:
+                                                            <ul>
+                                                                <li>Title of the movie</li>
+                                                                <li>Year the movie came out</li>
+                                                                <li>IMDB Rating of the movie</li>
+                                                                <li>Rotten Tomatoes Rating of the movie</li>
+                                                                <li>Country where the movie was produced</li>
+                                                                <li>Language of the movie</li>
+                                                                <li>Plot of the movie</li>
+                                                                <li>Actors in the movie</li>
+                                                            </ul>
+                                                        </p>
+                                                        <div class="image">
+                                                            <img src="assets/images/liri-images/movie-this.png"
+                                                                alt="liri movie">
+                                                        </div>
+                                                        <p>
+                                                            This was my first project in Node. Working solely in the command line was different at first but, in the end, I found it much more efficient for testing in comparison to using the console log on a browser.
+                                                        </p>
+                                                        <p>
+                                                            One issue I ran into a couple of times while working on this project was referencing the results from the APIs.  In particular, getting the Rotten Tomatoes rating from OMDB was troublesome.  I kept getting [object Object] when I referenced it as response.data.Ratings.value.  Eventually, I found that I needed to go to the second index in Ratings and get that value.
+                                                        </p>
+                                                        <p>
+                                                            I challenged myself in this project to implement a log of all the searches in an easily accessible place.  The original assignment required that we log the searches to a text file, but I found that difficult to reference since you would have to have access to that text file.  To achieve this, I created a Firebase database and had every search logged there.
+                                                        </p>
+                                                    </div>
+                                                    <a href="https://github.com/CB721/liri-node-app" class="button">
                                                         <span class="text">View Project</span>
                                                         <span class="arrow"></span>
                                                     </a>
@@ -838,11 +943,11 @@
                                                             I visit all located on one website."
                                                         </blockquote>
                                                         <p>
-                                                            Building this application was my first experience in
+                                                            Building this application was my first experience using
                                                             Firebase. Sending the user inputs to Firebase and then
-                                                            displaying them back on the Html was challenging. I was
+                                                            displaying them back on the HTML was challenging. I was
                                                             getting values and seeing them in Firebase, but when I
-                                                            referenced them to put back on the Html, they would only
+                                                            referenced them to put back on the HTML, they would only
                                                             show up when the user initally clicks the submit button.
                                                             After troubleshooting for multiple days, I realized I was
                                                             not referencing the snapshot value when calling the
@@ -1008,4 +1113,5 @@
     <script src="assets/js/scripts.js"></script>
 
 </body>
+
 </html>
