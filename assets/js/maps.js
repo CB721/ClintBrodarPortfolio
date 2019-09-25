@@ -1,5 +1,5 @@
 $("#tripsTaken").on("click", function () {
     event.preventDefault();
-    // show model
+    // show modal
     $('#tripMap').modal('toggle');
 })
