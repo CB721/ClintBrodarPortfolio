@@ -1,17 +1,22 @@
 {
   "name": "clintbrodarportfolio",
-  "version": "1.0.0",
-  "description": "Portfolio of projects created / worked on by Clint Brodar",
-  "main": "server.js",
-  "proxy": "http://0.0.0.0:3001",
+  "version": "2.0.0",
+  "private": true,
+  "dependencies": {
+    "gh-pages": "^2.0.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.0.1"
+  },
   "scripts": {
-    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-    "start:prod": "node server.js",
-    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
-    "client": "cd client && npm run start",
-    "install": "cd client && npm install && npm run build && cd ..",
-    "build": "cd client && npm run build",
-    "heroku-postbuild": "npm run build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "repository": {
     "type": "git",
@@ -29,12 +34,19 @@
     "url": "https://github.com/CB721/ClintBrodarPortfolio/issues"
   },
   "homepage": "https://github.com/CB721/ClintBrodarPortfolio#readme",
-  "dependencies": {
-    "dotenv": "^8.1.0",
-    "express": "^4.17.1",
-    "moment": "^2.24.0",
-    "mongoose": "^5.7.1",
-    "mongoose-auto-increment": "^5.0.1",
-    "path": "^0.12.7"
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
