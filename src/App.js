@@ -1,10 +1,12 @@
 import React, {useEffect, useState} from 'react';
-import './App.css';
+import Cube from './Components/Cube';
+import './App.scss';
+
 
 function App() {
   return (
-    <div>
-
+    <div className="app-background">
+      <Cube />
     </div>
   );
 }
