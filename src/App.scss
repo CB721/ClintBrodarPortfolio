@@ -4,6 +4,25 @@ $tertiary-color: rgb(69, 68, 68);
 $highlight-color: rgb(133, 0, 0);
 $secondary-highlight-color: rgb(181, 57, 57);
 $tertiary-highlight-color: rgb(46, 2, 2);
+@mixin center-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin white-red-dark-gradient-horizontal {
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(90deg, rgba(255,255,255,1) 0%, $highlight-color 26%, $tertiary-highlight-color 48%, $highlight-color 74%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(255,255,255,1) 0%, $highlight-color 26%, $tertiary-highlight-color 48%, $highlight-color 74%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, $highlight-color 26%, $tertiary-highlight-color 48%, $highlight-color 74%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+}
+@mixin white-red-dark-gradient-vertical {
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(0deg, rgba(255,255,255,1) 0%, $highlight-color 26%, $tertiary-highlight-color 48%, $highlight-color 74%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(255,255,255,1) 0%, $highlight-color 26%, $tertiary-highlight-color 48%, $highlight-color 74%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, $highlight-color 26%, $tertiary-highlight-color 48%, $highlight-color 74%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+}
 
 #root {
     padding: 0;
@@ -18,8 +37,48 @@ body {
     position: relative;
     background-blend-mode: multiply;
     background-size: cover;
+    height: auto;
     min-height: 100vh;
     width: 100%;
     overflow: hidden;
-    z-index: -1;
+    @include center-content;
+}
+.center-content {
+    margin: auto;
+    text-align: center;
+    @include center-content;
+}
+.horizontal-line {
+    height: 1px;
+    width: 100%;
+    @include white-red-dark-gradient-horizontal;
+}
+.vertical-line {
+    height: 100%;
+    min-height: 2.5rem;
+    width: 1px;
+    @include white-red-dark-gradient-vertical;
+}
+.row {
+    padding: 0;
+}
+.remove-left-margin {
+    margin-left: 30px;
+}
+.remove-right-margin {
+    margin-left: -30px;
+}
+.header-text {
+    font-size: 2rem;
+    color: $main-color;
+}
+.position-text {
+    font-size: 1.5rem;
+    color: $secondary-color;
+}
+a {
+    color: $secondary-highlight-color;
+    &:visited {
+        color: $secondary-highlight-color;
+    }
 }

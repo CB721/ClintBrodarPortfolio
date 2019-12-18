@@ -26,24 +26,9 @@
     animation-delay: 4s;
 }
 .cube:nth-child(4) {
-    left: 48%;
-    animation-duration: 25s;
-    animation-delay: 0.5s;
-}
-.cube:nth-child(5) {
     left: 94%;
     animation-duration: 10s;
     animation-delay: 8s;
-}
-.cube:nth-child(6) {
-    left: 58%;
-    animation-duration: 20s;
-    animation-delay: 2s;
-}
-.cube:nth-child(7) {
-    left: 22%;
-    animation-duration: 14s;
-    animation-delay: 7s;
 }
 .cube-side {
     position: absolute;
@@ -72,7 +57,7 @@
 }
 @keyframes spin {
     0% {
-        transform: rotateX(360deg) rotateY(0) translateY(150vh);
+        transform: rotateX(360deg) rotateY(0) translateY(195vh);
     }
     100% {
         transform: rotateX(0) rotateY(360deg) translateY(0vh);
