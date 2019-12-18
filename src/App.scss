@@ -77,8 +77,13 @@ body {
     color: $secondary-color;
 }
 a {
-    color: $secondary-highlight-color;
+    color: $main-color;
+    text-decoration: none;
     &:visited {
         color: $secondary-highlight-color;
+    }
+    &:hover {
+        color: $secondary-highlight-color;
+        text-decoration: none;
     }
 }

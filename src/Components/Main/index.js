@@ -3,7 +3,11 @@ import { Row, Col } from '../Grid';
 import profileImage from '../../assets/images/profile.jpg'
 import './style.scss';
 
-function Main() {
+function Main(props) {
+    function goToContact(event) {
+        event.preventDefault();
+        console.log("go to contact");
+    }
     return (
         <div className="main-section">
             <Row>
@@ -48,9 +52,11 @@ function Main() {
                         <Col size="5">
                             <div className="horizontal-line remove-left-margin" />
                             <div className="main-contact-section remove-left-margin">
-                                <h5>
-                                    Download Resume
-                                </h5>
+                                <a href="https://docs.google.com/document/d/1KgyORb4xePMjWTB2FjAQ30-Plnfo0qXCAQuDC9RowzU/export?format=pdf" download>
+                                    <h5>
+                                        Download Resume
+                                    </h5>
+                                </a>
                             </div>
                         </Col>
                         <Col size="2">
@@ -60,7 +66,7 @@ function Main() {
                         </Col>
                         <Col size="5">
                             <div className="horizontal-line remove-right-margin" />
-                            <div className="main-contact-section remove-right-margin">
+                            <div className="main-contact-section remove-right-margin" onClick={(event) => goToContact(event)}>
                                 <h5>
                                     Contact Me
                                 </h5>
