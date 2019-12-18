@@ -9,7 +9,7 @@ function Main(props) {
         console.log("go to contact");
     }
     return (
-        <div className="main-section">
+        <div className="main-section remove-left-margin">
             <Row>
                 <Col size="12">
                     <div className="heading-section">
@@ -54,7 +54,7 @@ function Main(props) {
                             <div className="main-contact-section remove-left-margin">
                                 <a href="https://docs.google.com/document/d/1KgyORb4xePMjWTB2FjAQ30-Plnfo0qXCAQuDC9RowzU/export?format=pdf" download>
                                     <h5>
-                                        Download Resume
+                                        Resume
                                     </h5>
                                 </a>
                             </div>

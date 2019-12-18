@@ -3,7 +3,7 @@
 
 .main-section {
     background: white;
-    border-radius: 25px;
+    @include default-border-radius;
     overflow: scroll;
     height: auto;
     @include center-content;
