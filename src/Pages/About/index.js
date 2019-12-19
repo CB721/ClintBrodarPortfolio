@@ -39,7 +39,7 @@ function About(props) {
                                 <div className="remove-right-margin center-content">
                                     <p>
                                         <strong>
-                                            Age . . . . .
+                                            Age. . . . .
                                         </strong>
                                         27
                                     </p>
@@ -49,7 +49,7 @@ function About(props) {
                                 <div className="center-content">
                                     <p>
                                         <strong>
-                                            Location . . . . .
+                                            Location. . . . . 
                                         </strong>
                                         Seattle
                                     </p>
@@ -81,7 +81,6 @@ function About(props) {
                                 </Col>
                             ))}
                         </Row>
-                        {/* <i className="fas fa-user-tie" /> */}
                     </Col>
                 </Row>
             </div>

@@ -1,6 +1,6 @@
 @import "../../App.scss";
 
-.side-page {
+@mixin side-page {
     background: rgb(255,255,255);
     @include default-border-radius;
     overflow: scroll;
@@ -9,30 +9,14 @@
     margin-top: 2.5vh;
     @include center-content;
     position: relative;
-    animation-name: fade-in;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
 }
-@keyframes fade-in {
-    0% {
-        display: none;
-        opacity: 0;
-        left: -100%;
-        width: 0%;
-        background: rgb(255,255,255);
-        background: -moz-linear-gradient(-90deg, rgba(255,255,255,1) 0%, rgba(255, 255, 255, 0) 100%);
-        background: -webkit-linear-gradient(-90deg, rgba(255,255,255,1) 0%, rgba(255, 255, 255, 0) 100%);
-        background: linear-gradient(-90deg, rgba(255,255,255,1) 0%, rgba(255, 255, 255, 0) 100%);
-    }
-    100% {
-        display: inline-block;
-        opacity: 1;
-        left: 0;
-        width: 100%;
-        background: rgb(255,255,255);
-        background: -moz-linear-gradient(-90deg, rgba(255,255,255,1) 100%, rgba(255, 255, 255, 0) 100%);
-        background: -webkit-linear-gradient(-90deg, rgba(255,255,255,1) 100%, rgba(255, 255, 255, 0) 100%);
-        background: linear-gradient(-90deg, rgba(255,255,255,1) 100%, rgba(255, 255, 255, 0) 100%);
-    }
+
+.side-animate {
+    @include side-page;
+    @include animate-side;
+    @include slide-in-page;
 }
+.side-page {
+    @include side-page;
+}
+

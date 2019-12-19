@@ -13,10 +13,15 @@ import './App.scss';
 
 function App() {
   const [section, setSection] = useState(0);
+  const [slide, setSlide] = useState(true);
 
   function switchPage(event, page) {
     event.preventDefault();
     setSection(page);
+    setSlide(true);
+    setTimeout(() => {
+      setSlide(false);
+    }, 1000);
   }
   return (
     <div className="app-background">
@@ -36,26 +41,30 @@ function App() {
               <Col size="md-6 12">
                 {section === 0 ? (
                   <SidePage
-                    section={<About 
+                    slide={slide}
+                    section={<About
 
                     />}
                   />
                 ) : section === 1 ? (
                   <SidePage
-                    section={<Blog 
+                    slide={slide}
+                    section={<Projects
 
                     />}
                   />
                 ) : section === 2 ? (
                   <SidePage
-                    section={<Contact
-                    
+                    slide={slide}
+                    section={<Blog
+
                     />}
                   />
                 ) : section === 3 ? (
                   <SidePage
-                    section={<Projects
-                    
+                    slide={slide}
+                    section={<Contact
+
                     />}
                   />
                 ) : (<div />)}

@@ -1,12 +1,12 @@
 import React from 'react';
-import { Row, Col } from '../Grid';
-import Slide from 'react-reveal/Slide';
 import './style.scss';
 
-function SidePage({section}) {
+function SidePage(props) {
     return (
-        <div className="side-page">
-            {section}
+        <div
+            className={props.slide ? "side-animate" : "side-page"}
+        >
+            {props.section}
         </div>
     )
 }
