@@ -1,0 +1,22 @@
+@import "../../App.scss";
+
+.fact {
+    margin-top: 10px;
+    padding: 3px;
+    width: 100%;
+    border: 1px solid $main-color;
+    @include default-border-radius;
+    height: auto;
+    .fact-desc {
+        font-size: 0.62rem;
+        color: $secondary-color
+    }
+    &:hover {
+        background: $highlight-color;
+        transition: 0.5s;
+        .fas, .fab, .fact-desc{
+            color: white;
+            transition: 0.5s;
+        }
+    }
+}

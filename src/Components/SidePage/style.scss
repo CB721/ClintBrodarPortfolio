@@ -5,7 +5,6 @@
     @include default-border-radius;
     overflow: scroll;
     height: auto;
-    display: inline-block;
     height: 65vh;
     margin-top: 2.5vh;
     @include center-content;
@@ -17,6 +16,7 @@
 }
 @keyframes fade-in {
     0% {
+        display: none;
         opacity: 0;
         left: -100%;
         width: 0%;
@@ -26,6 +26,7 @@
         background: linear-gradient(-90deg, rgba(255,255,255,1) 0%, rgba(255, 255, 255, 0) 100%);
     }
     100% {
+        display: inline-block;
         opacity: 1;
         left: 0;
         width: 100%;

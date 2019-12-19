@@ -23,13 +23,13 @@
         cursor: pointer;
         background: $highlight-color;
         transition: 0.5s;
-        .fas, .menu-titles {
+        .fas, .fab, .menu-titles {
             color: white;
             transition: 0.5s;
         }
     }
 }
-.fas {
+.fas, .fab {
     margin-top: 10px;
     font-size: 32px;
     color: $highlight-color;
@@ -42,7 +42,7 @@
     .side-menu {
         display: block;
     }
-    .fas {
+    .fas, .fab {
         font-size: 28px;
     }
     .menu-titles {
@@ -53,7 +53,7 @@
     .side-menu {
         display: block;
     }
-    .fas {
+    .fas, .fab {
         font-size: 24px;
     }
     .menu-titles {
@@ -79,7 +79,7 @@
             border-bottom-left-radius: 0px;
         }
     }
-    .fas {
+    .fas, .fab {
         font-size: 32px;
     }
     .menu-titles {

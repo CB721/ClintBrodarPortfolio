@@ -24,12 +24,12 @@ function Main(props) {
                         <div className="main-info">
                             <h1 className="header-text">
                                 Clint Brodar
-                        </h1>
+                            </h1>
                         </div>
                         <div className="main-info">
-                            <h3 className="position-text">
+                            <h5 className="position-text">
                                 Full Stack Web Developer
-                        </h3>
+                            </h5>
                         </div>
                         <div className="main-info">
                             <a target="_blank" rel="noopener noreferrer" href={"https://github.com/CB721"}>
