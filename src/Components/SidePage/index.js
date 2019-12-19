@@ -3,13 +3,11 @@ import { Row, Col } from '../Grid';
 import Slide from 'react-reveal/Slide';
 import './style.scss';
 
-function SidePage(props) {
+function SidePage({section}) {
     return (
-        // <Slide left>
-            <div className="side-page">
-
-            </div>
-        // </Slide>
+        <div className="side-page">
+            {section}
+        </div>
     )
 }
 

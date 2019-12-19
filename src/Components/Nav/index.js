@@ -3,15 +3,11 @@ import { Row, Col } from '../Grid';
 import './style.scss';
 
 function sideNav(props) {
-    function switchPage(event, page) {
-        event.preventDefault();
-        console.log(page);
-    }
     return (
         <div className="side-menu remove-left-margin">
             <div
                 className="menu-item center-content"
-                onClick={(event) => switchPage(event, "about")}
+                onClick={(event) => props.switchPage(event, 0)}
             >
                 <Row>
                     <Col size="12">
@@ -25,7 +21,7 @@ function sideNav(props) {
             <div className="horizontal-line" />
             <div
                 className="menu-item center-content"
-                onClick={(event) => switchPage(event, "projects")}
+                onClick={(event) => props.switchPage(event, 1)}
             >
                 <Row>
                     <Col size="12">
@@ -39,7 +35,7 @@ function sideNav(props) {
             <div className="horizontal-line" />
             <div
                 className="menu-item center-content"
-                onClick={(event) => switchPage(event, "blog")}
+                onClick={(event) => props.switchPage(event, 2)}
             >
                 <Row>
                     <Col size="12">
@@ -53,7 +49,7 @@ function sideNav(props) {
             <div className="horizontal-line" />
             <div
                 className="menu-item center-content"
-                onClick={(event) => switchPage(event, "contact")}
+                onClick={(event) => props.switchPage(event, 3)}
             >
                 <Row>
                     <Col size="12">
