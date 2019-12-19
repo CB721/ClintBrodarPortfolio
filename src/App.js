@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Cube from './Components/Cube';
 import Main from './Components/Main';
+import SidePage from './Components/SidePage';
 import SideNav from './Components/Nav';
 import { Row, Col } from './Components/Grid';
 import './App.scss';
@@ -21,7 +22,9 @@ function App() {
                 <Main />
               </Col>
               <Col size="md-6 12">
+                <SidePage 
 
+                />
               </Col>
             </Row>
           </Col>

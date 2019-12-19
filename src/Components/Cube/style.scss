@@ -32,7 +32,10 @@
 }
 .cube-side {
     position: absolute;
-    background: rgba(104, 0, 0, 0.486);
+    
+    &::before {
+        filter: blur(10px);
+    }
     z-index: 1;
     border: 5px solid rgb(0, 0, 0);
     animation: expand linear 10s infinite;
@@ -68,15 +71,27 @@
         width: 1.438rem;
         height: 1.438rem;
         border-radius: 50%;
+        background: rgba(104, 0, 0, 0);
+        -webkit-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.51);
+        -moz-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.51);
+        box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.51);
     }
     50% {
         width: 10.313rem;
         height: 10.313rem;
         border-radius: 25%;
+        background: rgba(104, 0, 0, 0.253);
+        -webkit-box-shadow: 10px 10px 100px -8px rgba(0,0,0,0.51);
+        -moz-box-shadow: 10px 10px 100px -8px rgba(0,0,0,0.51);
+        box-shadow: 10px 10px 5px -100px rgba(0,0,0,0.51);
     }
     100% {
         width: 1.438rem;
         height: 1.438rem;
         border-radius: 0%;
+        background: rgba(104, 0, 0, 0);
+        -webkit-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.51);
+        -moz-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.51);
+        box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.51);
     }
 }

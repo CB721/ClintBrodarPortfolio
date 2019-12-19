@@ -5,8 +5,9 @@
     background: white;
     @include default-border-radius;
     overflow: scroll;
-    height: auto;
+    height: 70vh;
     @include center-content;
+    display: inline-block;
     width: 100%;
     z-index: 5;
     -webkit-box-shadow: -20px -20px 14px 1px rgba($tertiary-highlight-color, 0.5);
@@ -20,6 +21,7 @@
     position: relative;
     overflow: hidden;
     width: 100%;
+    z-index: 5;
     height: 20.75rem;
     background-color: $highlight-color;
     background: url("../../assets/images/seattle.jpg");
@@ -33,7 +35,8 @@
         content: '';
         position: absolute;
         margin-top: 110px;
-	    width: 700px;
+        width: 700px;
+        z-index: 5;
 	    height: 200px;
         background: #ffffff;
         overflow: hidden;
@@ -54,11 +57,13 @@
 .main-info-section {
     margin-top: 70px;
     margin-bottom: 30px;
+    max-height: fit-content;
 }
 .profile-image-section {
     position: relative;
     top: -27vh;
     display: flex;
+    z-index: 5;
     align-items: flex-end;
     justify-content: center;
 }
@@ -74,6 +79,7 @@
 .main-info {
     @include center-content;
     position: relative;
+    z-index: 5;
 }
 .social-links {
     margin: 0 1rem 0 1rem;
@@ -83,6 +89,7 @@
     @include center-content;
     height: 3rem;
     width: 100%;
+    z-index: 5;
     .col-5 {
         padding: 0;
     }

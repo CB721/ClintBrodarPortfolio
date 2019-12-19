@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col } from '../Grid';
-import profileImage from '../../assets/images/profile.jpg'
+import profileImage from '../../assets/images/profile.jpg';
 import './style.scss';
 
 function Main(props) {

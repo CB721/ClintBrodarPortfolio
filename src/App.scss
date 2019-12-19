@@ -26,6 +26,11 @@ $tertiary-highlight-color: rgb(46, 2, 2);
     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, $highlight-color 26%, $tertiary-highlight-color 48%, $highlight-color 74%, rgba(255,255,255,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
 }
+@mixin main-linear-background {
+    background: linear-gradient(to bottom, $tertiary-highlight-color 0%, $highlight-color 40%, $secondary-highlight-color 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;
+    background-size: cover;
+}
 
 #root {
     padding: 0;
@@ -36,10 +41,8 @@ body {
     margin:0;
 }
 .app-background {
-    background: linear-gradient(to bottom, $tertiary-highlight-color 0%, $highlight-color 40%, $secondary-highlight-color 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    @include main-linear-background;
     position: relative;
-    background-blend-mode: multiply;
-    background-size: cover;
     height: auto;
     min-height: 100vh;
     width: 100%;
