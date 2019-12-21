@@ -1,0 +1,36 @@
+@import "../../App.scss";
+
+.project-preview {
+    width: 100%;
+    position: relative;
+    @include default-border-radius;
+    border: 3px solid $secondary-highlight-color;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    &::before {
+        content: "";
+	    display: block;
+    }
+    height: fit-content;
+    &:hover {
+        cursor: pointer;
+        .project-main-image {
+            opacity: 0.8;
+        }
+        .project-preview-title, .project-type {
+            color: white;
+        }
+        background: rgba($secondary-highlight-color, 1);
+        transition: 0.5s;
+    }
+}
+.project-main-image {
+    width: 100%;
+}
+.project-type {
+    font-size: 8px;
+}
+.project-preview-title {
+    font-size: 16px;
+    margin: 0;
+}

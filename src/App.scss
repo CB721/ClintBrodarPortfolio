@@ -5,7 +5,7 @@ $highlight-color: rgb(133, 0, 0);
 $secondary-highlight-color: rgb(181, 57, 57);
 $tertiary-highlight-color: rgb(46, 2, 2);
 @mixin default-border-radius {
-    border-radius: 25px;
+    border-radius: 5px;
 }
 @mixin center-content {
     display: flex;
@@ -170,5 +170,10 @@ a {
     }
     .remove-right-margin {
         margin-left: 0px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .vertical-line {
+        display: none;
     }
 }

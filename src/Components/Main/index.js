@@ -4,10 +4,6 @@ import profileImage from '../../assets/images/profile.jpg';
 import './style.scss';
 
 function Main(props) {
-    function goToContact(event) {
-        event.preventDefault();
-        console.log("go to contact");
-    }
     return (
         <div className="main-section remove-left-margin">
             <Row>
@@ -66,7 +62,7 @@ function Main(props) {
                         </Col>
                         <Col size="5">
                             <div className="horizontal-line remove-right-margin" />
-                            <div className="main-contact-section remove-right-margin" onClick={(event) => goToContact(event)}>
+                            <div className="main-contact-section remove-right-margin" onClick={(event) => props.switchPage(event, 3)}>
                                 <h5>
                                     Contact Me
                                 </h5>

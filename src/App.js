@@ -14,6 +14,7 @@ import './App.scss';
 function App() {
   const [section, setSection] = useState(0);
   const [slide, setSlide] = useState(true);
+  const [category, setCategory] = useState(0);
 
   function switchPage(event, page) {
     event.preventDefault();
@@ -22,6 +23,10 @@ function App() {
     setTimeout(() => {
       setSlide(false);
     }, 1000);
+  }
+  function changeProjectCategory(event, category) {
+    event.preventDefault();
+    setCategory(category);
   }
   return (
     <div className="app-background">
@@ -36,7 +41,9 @@ function App() {
           <Col size="md-11 12">
             <Row>
               <Col size="md-6 12">
-                <Main />
+                <Main 
+                  switchPage={switchPage}
+                />
               </Col>
               <Col size="md-6 12">
                 {section === 0 ? (
@@ -50,7 +57,7 @@ function App() {
                   <SidePage
                     slide={slide}
                     section={<Projects
-
+                      changeProjectCategory={changeProjectCategory}
                     />}
                   />
                 ) : section === 2 ? (

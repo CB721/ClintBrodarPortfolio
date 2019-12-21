@@ -1,0 +1,9 @@
+@import "../../App.scss";
+
+.category {
+    &:hover {
+        color: $highlight-color;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+}

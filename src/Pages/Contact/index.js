@@ -16,25 +16,32 @@ function Contact(props) {
                 </Row>
                 <div className="contact-section">
                     <Row>
-                        <Col size="12">
-                            <div className="center-content">
-                                <p>
-                                    <strong>
-                                        Email. . . . .
-                                </strong>
-                                    clintbrodar@gmail.com
-                            </p>
-                            </div>
+                        <Col size="sm-1 12">
+                            <div className="vertical-line" />
                         </Col>
-                        <Col size="12">
-                            <div className="center-content">
-                                <p>
-                                    <strong>
-                                        Phone. . . . .
-                                    </strong>
-                                (206) 488-3956
-                            </p>
-                            </div>
+                        <Col size="sm-11 12">
+                            <Row>
+                                <Col size="12">
+                                    <div className="center-content">
+                                        <p>
+                                            <strong>
+                                                Email. . . . .
+                                            </strong>
+                                            clintbrodar@gmail.com
+                                        </p>
+                                    </div>
+                                </Col>
+                                <Col size="12">
+                                    <div className="center-content">
+                                        <p>
+                                            <strong>
+                                                Phone. . . . .
+                                            </strong>
+                                            (206) 488-3956
+                                        </p>
+                                    </div>
+                                </Col>
+                            </Row>
                         </Col>
                     </Row>
                 </div>
