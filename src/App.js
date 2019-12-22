@@ -83,7 +83,7 @@ function App() {
   function closeModal(event) {
     event.preventDefault();
     setOpen(false);
-    setProject();
+    setProject(ProjectsData);
   }
   return (
     <div className="app-background">

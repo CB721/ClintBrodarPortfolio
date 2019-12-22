@@ -4,7 +4,7 @@ import BlogData from '../../assets/data/blog.json';
 import Post from '../../Components/Post';
 import './style.scss';
 
-function Blog(props) {
+function Blog() {
     return (
         <div className="page-section-border">
             <div className="page-section">
