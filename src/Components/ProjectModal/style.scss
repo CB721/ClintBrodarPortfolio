@@ -10,6 +10,10 @@
     height: 100%;
     transition: 0.3s;
     overflow: scroll;
+    animation-name: expand-in;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
 }
 .modal-side {
     z-index: 7;
@@ -34,4 +38,13 @@
 }
 .project-links {
     padding: 15px 0 15px 0;
+}
+
+@keyframes expand-in {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
 }

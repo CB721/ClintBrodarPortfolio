@@ -33,13 +33,13 @@ $tertiary-highlight-color: rgb(46, 2, 2);
 }
 @mixin animate-side {
     animation-name: fade-in;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
 }
 @mixin animated-content {
     animation-name: fade-content;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
 }

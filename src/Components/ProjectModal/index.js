@@ -93,6 +93,18 @@ function ProjectModal(props) {
                                     </p>
                                 </Col>
                                 <Col size="12">
+                                    <p>
+                                        Technologies used:
+                                    </p>
+                                    <ul className="project-ul">
+                                        {props.project.technologies.map((tech, index) => (
+                                            <li className="project-li" key={index}>
+                                                {tech}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </Col>
+                                <Col size="12">
                                     <div className="horizontal-line" />
                                 </Col>
                                 <div className="project-links">

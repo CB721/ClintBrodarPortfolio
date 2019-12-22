@@ -23,6 +23,10 @@
         background: rgba($secondary-highlight-color, 1);
         transition: 0.5s;
     }
+    animation-name: slide-up;
+    animation-duration: 1.3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
 }
 .project-main-image {
     width: 100%;
@@ -33,4 +37,16 @@
 .project-preview-title {
     font-size: 16px;
     margin: 0;
+}
+
+@keyframes slide-up {
+    0% {
+        top: 100%;
+    }
+    75% {
+        top: -5%;
+    }
+    100% {
+        top: 0%;
+    }
 }

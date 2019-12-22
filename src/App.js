@@ -20,17 +20,60 @@ function App() {
   const [project, setProject] = useState();
   const [open, setOpen] = useState(false);
 
+  useEffect(() => {
+    setProject(ProjectsData);
+  }, []);
+
   function switchPage(event, page) {
     event.preventDefault();
     setSection(page);
     setSlide(true);
     setTimeout(() => {
       setSlide(false);
-    }, 1000);
+    }, 500);
   }
   function changeProjectCategory(event, category) {
     event.preventDefault();
     setCategory(category);
+    let filteredProducts = [];
+    switch (category) {
+      case 0:
+        setProject(ProjectsData);
+        break;
+      case 1:
+        for (let i = 0; i < ProjectsData.length; i++) {
+          for (let j = 0; j < ProjectsData[i].type.length; j++) {
+            if (ProjectsData[i].type[j] === "Front End" || ProjectsData[i].type[j] === "Full Stack") {
+              filteredProducts.push(ProjectsData[i]);
+            }
+          }
+        }
+        setProject(filteredProducts);
+        break;
+      case 2:
+        for (let i = 0; i < ProjectsData.length; i++) {
+          for (let j = 0; j < ProjectsData[i].type.length; j++) {
+            if (ProjectsData[i].type[j] === "Back End" || ProjectsData[i].type[j] === "Full Stack") {
+              filteredProducts.push(ProjectsData[i]);
+            }
+          }
+        }
+        setProject(filteredProducts);
+        break;
+      case 3:
+        for (let i = 0; i < ProjectsData.length; i++) {
+          for (let j = 0; j < ProjectsData[i].type.length; j++) {
+            if (ProjectsData[i].type[j] === "Data Analytics" || ProjectsData[i].type[j] === "Game") {
+              filteredProducts.push(ProjectsData[i]);
+            }
+          }
+        }
+        setProject(filteredProducts);
+        break;
+      default:
+        setProject(ProjectsData);
+        return;
+    }
   }
   function openModal(event, index) {
     event.preventDefault();
@@ -73,7 +116,7 @@ function App() {
                     section={<Projects
                       changeProjectCategory={changeProjectCategory}
                       category={category}
-                      ProjectsData={ProjectsData}
+                      ProjectsData={project}
                       openModal={openModal}
                     />}
                   />

@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Row, Col } from '../../Components/Grid';
 import ProjectPreview from '../../Components/ProjectPreview';
 import './style.scss';
 
 function Projects(props) {
+    useEffect(() => {
+
+    }, [props])
     return (
         <div className="page-section-border">
             <div className="page-section">
@@ -16,11 +19,8 @@ function Projects(props) {
                     </Col>
                 </Row>
                 <Row>
-                    <Col size="sm-1 12">
-                        <div className="vertical-line" />
-                    </Col>
                     <Col size="sm-11 12">
-                        <div className="remove-right-margin">
+                        <div className="remove-left-margin">
                             <Row>
                                 <Col size="3">
                                     <div

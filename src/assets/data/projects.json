@@ -22,7 +22,7 @@
         "tertiaryImage": "",
         "description": "A mock CRM application focused on data analytics and sales team tools.",
         "mainDetails": "This was a very large application to complete in only a few weeks. We were successful because, early on, we divided up the responsibilities so everyone was aware of what they needed to do. This was a very large application to complete in only a few weeks. We were successful because, early on, we divided up the responsibilities so everyone was aware of what they needed to do.",
-        "secondaryDetails": "Once I had all of the schemas connected to each other, I then needed to generate analytics. I focused on sales analytics as that is the most important thing for a business. Through this process, I learned about the power of aggregate functions in MongoDB. Because a business may want to view  different time sets of data, I wanted to create as much flexibility as I could. In order to generate date ranges, I used Moment.js. These dates were then passed along in the API call.",
+        "secondaryDetails": "Once I had all of the schemas connected to each other, I then needed to generate analytics. I focused on sales analytics as that is the most important thing for a business. Through this process, I learned about the power of aggregate functions in MongoDB. Because a business may want to view  different time sets of data, I wanted to create as much flexibility as I could. In order to generate date ranges, I used Moment.js.",
         "tertiaryDetails": "The user also can view a pie chart with all of the products based on quantity sold. By  clicking on the name of them, they can simulate what sales would be like without that particular product. The user can search for an employee by name and get individual statistics.",
         "responsibilities": [
             "Creating the schemas",
@@ -178,7 +178,8 @@
         "teamSize": 1,
         "technologies": [
             "JavaScript",
-            "Node.js"
+            "Node.js",
+            "Firebase DB"
         ],
         "publishedDate": "Jun 2019",
         "mainImage": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/assets/images/liri-images/liri.gif?raw=true",
@@ -238,7 +239,8 @@
         "technologies": [
             "JavaScript",
             "jQuery",
-            "HTML/CSS"
+            "HTML/CSS",
+            "Firebase DB"
         ],
         "publishedDate": "May 2019",
         "mainImage": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/assets/images/trainScheduler.png?raw=true",
