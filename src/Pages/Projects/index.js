@@ -1,7 +1,6 @@
 import React from 'react';
 import { Row, Col } from '../../Components/Grid';
 import ProjectPreview from '../../Components/ProjectPreview';
-import Data from '../../assets/data/projects.json';
 import './style.scss';
 
 function Projects(props) {
@@ -73,12 +72,14 @@ function Projects(props) {
                     </Col>
                 </Row>
                 <Row>
-                    {Data.map((project, index) => (
+                    {props.ProjectsData.map((project, index) => (
                         <Col size="6" key={index}>
                             <ProjectPreview
                                 mainImage={project.mainImage}
                                 name={project.name}
                                 types={project.type}
+                                openModal={props.openModal}
+                                index={index}
                             />
                         </Col>
                     ))}

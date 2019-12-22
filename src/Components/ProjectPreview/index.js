@@ -4,7 +4,10 @@ import './style.scss';
 
 function Post(props) {
     return (
-        <div className="project-preview">
+        <div
+            className="project-preview"
+            onClick={(event) => props.openModal(event, props.index)}
+        >
             <Row>
                 <Col size="12">
                     <img src={props.mainImage} alt={props.title} className="project-main-image" />
