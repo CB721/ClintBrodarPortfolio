@@ -4,7 +4,7 @@ import './style.scss';
 
 function sideNav(props) {
     return (
-        <div className="side-menu remove-left-margin">
+        <div className="side-menu ">
             <div
                 className="menu-item center-content"
                 onClick={(event) => props.switchPage(event, 0)}

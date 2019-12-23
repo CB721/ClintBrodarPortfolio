@@ -72,10 +72,10 @@
     .menu-item {
         &:first-child {
             border-top-right-radius: 0px;
-            border-bottom-left-radius: 25px;
+            border-bottom-left-radius: 5px;
         }
         &:last-child {
-            border-top-right-radius: 25px;
+            border-top-right-radius: 5px;
             border-bottom-left-radius: 0px;
         }
     }
@@ -85,5 +85,13 @@
     .menu-titles {
         display: block;
         font-size: 16px;
+    }
+}
+@media only screen and (max-width: 501px) {
+    .side-menu {
+        margin-bottom: 20px;
+        height: auto;
+        width: 100%;
+        z-index: 7;
     }
 }

@@ -31,6 +31,7 @@
     height: 100vh;
     float: left;
     overflow: scroll;
+    overflow-x: hidden;
 }
 .project-modal-images {
     width: 100%;
@@ -60,6 +61,9 @@
             content: close-quote;
         }
     }
+}
+blockquote {
+    border-left: 10px solid $tertiary-color;
 }
 .project-main-details {
     font-size: 16px;

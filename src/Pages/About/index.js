@@ -36,7 +36,7 @@ function About(props) {
                     <Col size="12">
                         <Row>
                             <Col size="6">
-                                <div className="remove-right-margin center-content">
+                                <div className="center-content">
                                     <p>
                                         <strong>
                                             Age. . . . .
