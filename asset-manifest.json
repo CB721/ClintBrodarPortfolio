@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/ClintBrodarPortfolio/static/css/main.cfcf8a0b.chunk.css",
-    "main.js": "/ClintBrodarPortfolio/static/js/main.725eb648.chunk.js",
-    "main.js.map": "/ClintBrodarPortfolio/static/js/main.725eb648.chunk.js.map",
+    "main.css": "/ClintBrodarPortfolio/static/css/main.2b24cc84.chunk.css",
+    "main.js": "/ClintBrodarPortfolio/static/js/main.c1f8b12c.chunk.js",
+    "main.js.map": "/ClintBrodarPortfolio/static/js/main.c1f8b12c.chunk.js.map",
     "runtime~main.js": "/ClintBrodarPortfolio/static/js/runtime~main.e749b69d.js",
     "runtime~main.js.map": "/ClintBrodarPortfolio/static/js/runtime~main.e749b69d.js.map",
-    "static/js/2.60a0f5e2.chunk.js": "/ClintBrodarPortfolio/static/js/2.60a0f5e2.chunk.js",
-    "static/js/2.60a0f5e2.chunk.js.map": "/ClintBrodarPortfolio/static/js/2.60a0f5e2.chunk.js.map",
+    "static/js/2.4a3bface.chunk.js": "/ClintBrodarPortfolio/static/js/2.4a3bface.chunk.js",
+    "static/js/2.4a3bface.chunk.js.map": "/ClintBrodarPortfolio/static/js/2.4a3bface.chunk.js.map",
     "index.html": "/ClintBrodarPortfolio/index.html",
-    "precache-manifest.629ba73fad092ebba1e17ddce3f23e45.js": "/ClintBrodarPortfolio/precache-manifest.629ba73fad092ebba1e17ddce3f23e45.js",
+    "precache-manifest.80b51a800ec818da819b2ff52b3a26e6.js": "/ClintBrodarPortfolio/precache-manifest.80b51a800ec818da819b2ff52b3a26e6.js",
     "service-worker.js": "/ClintBrodarPortfolio/service-worker.js",
-    "static/css/main.cfcf8a0b.chunk.css.map": "/ClintBrodarPortfolio/static/css/main.cfcf8a0b.chunk.css.map",
+    "static/css/main.2b24cc84.chunk.css.map": "/ClintBrodarPortfolio/static/css/main.2b24cc84.chunk.css.map",
     "static/media/profile.jpg": "/ClintBrodarPortfolio/static/media/profile.5ce558d2.jpg",
-    "static/media/style.scss": "/ClintBrodarPortfolio/static/media/seattle.4a17c1eb.jpg"
+    "static/media/style.scss": "/ClintBrodarPortfolio/static/media/seattle.4a17c1eb.jpg",
+    "static/media/trip-globe.mp4": "/ClintBrodarPortfolio/static/media/trip-globe.8e65be0e.mp4"
   }
 }
