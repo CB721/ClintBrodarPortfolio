@@ -1,13 +1,24 @@
-A portfolio of all my highlighted projects, skills and work experience.
+# Clint Brodar Portfolio
 
-The home page includes a picture of me as well as an image of Seattle.  There are also links to my GitHub repository and LinkedIn profile.
+## A portfolio of my projects, social media post and work experience.
 
-The About section includes a short section that describes my experience, goals and some fun facts about myself.  It also has the option to download a pdf of my resume.
+## View Project
+[Portfolio](http://cb721.github.io/ClintBrodarPortfolio)
 
-The Resume section includes a more detailed section of my work and school experience.  There are also a list of languages and skills I've learned.
+![Portfolio](src/assets/images/portfolio-screenshot.png)
 
-The Projects section includes pictures and descriptions of projects I've done or worked on.  Each one highlights problems I faced and how I overcame them.  There is a link to the deployed project at the bottom of the description.
+* The main panel includes a picture of me as well as an image of Seattle with links to my GitHub repository and LinkedIn profile.
 
-The Blog section includes a picture and link to my LinkedIn posts.
+* The About section includes a short section that describes my experience, goals and some fun facts about myself.
 
-The Contact section includes my contact information and a contact form.
+* The Projects section includes pictures and details of projects I've worked on.  Each one highlights problems I faced and how I overcame them.  There is a link to the deployed project at the bottom of the description.  Projects can be filtered by Front End, Back End, Data Analytics And Game Development.
+
+* The Blog section includes a picture and link to my LinkedIn posts.
+
+* The Contact section includes my contact information.
+
+### Technologies Used
+
+* React.js
+* Javascript(ES6)
+* HTML/SCSS

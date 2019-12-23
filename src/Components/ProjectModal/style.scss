@@ -1,0 +1,79 @@
+@import "../../App.scss";
+
+.project-modal {
+    display: flex;
+    position: fixed;
+    z-index: 6;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+    overflow: scroll;
+    animation-name: expand-in;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+}
+.modal-side {
+    z-index: 7;
+    width: 15%;
+    height: 100vh;
+    
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+    float: left;
+}
+.modal-content-section {
+    z-index: 7;
+    background: white;
+    width: 70%;
+    height: 100vh;
+    float: left;
+    overflow: scroll;
+}
+.project-modal-images {
+    width: 100%;
+    height: auto;
+}
+.project-links {
+    padding: 15px 0 15px 0;
+}
+.project-type-modal {
+    font-size: 16px;
+    font-style: italic;
+}
+.project-description {
+    font-size: 24px;
+}
+.project-ul {
+    list-style-type: square;
+    .project-li {
+        font-size: 16px;
+    }
+    .add-quotes {
+        font-style: italic;
+        &:before {
+            content: open-quote;
+        }
+        &:after {
+            content: close-quote;
+        }
+    }
+}
+.project-main-details {
+    font-size: 16px;
+}
+.project-headings {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@keyframes expand-in {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

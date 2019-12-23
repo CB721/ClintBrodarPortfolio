@@ -1,0 +1,97 @@
+.cube {
+    width: auto;
+    height: auto;
+    position: absolute;
+    bottom: -5%;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    animation-name: spin;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transition: 0.5s;
+}
+.cube:nth-child(1) {
+    left: 8%;
+    animation-duration: 18s;
+    animation-delay: 2s;
+}
+.cube:nth-child(2) {
+    left: 75%;
+    animation-duration: 13s;
+    animation-delay: 6s;
+}
+.cube:nth-child(3) {
+    left: 33%;
+    animation-duration: 12s;
+    animation-delay: 4s;
+}
+.cube:nth-child(4) {
+    left: 94%;
+    animation-duration: 10s;
+    animation-delay: 8s;
+}
+.cube-side {
+    position: absolute;
+    
+    &::before {
+        filter: blur(10px);
+    }
+    z-index: 1;
+    border: 5px solid rgb(0, 0, 0);
+    animation: expand linear 10s infinite;
+}
+.cube-front  { 
+    transform: rotateY(0deg) translateZ(50px); 
+}
+.cube-right  { 
+    transform: rotateY(90deg) translateZ(50px); 
+}
+.cube-back   { 
+    transform: rotateY(180deg) translateZ(50px); 
+}
+.cube-left   { 
+    transform: rotateY(-90deg) translateZ(50px); 
+}
+.cube-top    { 
+    transform: rotateX(90deg) translateZ(50px); 
+}
+.cube-bottom { 
+    transform: rotateX(-90deg) translateZ(50px); 
+}
+@keyframes spin {
+    0% {
+        transform: rotateX(360deg) rotateY(0) translateY(195vh);
+    }
+    100% {
+        transform: rotateX(0) rotateY(360deg) translateY(0vh);
+    }
+}
+@keyframes expand {
+    0% {
+        width: 1.438rem;
+        height: 1.438rem;
+        border-radius: 50%;
+        background: rgba(104, 0, 0, 0);
+        -webkit-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.51);
+        -moz-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.51);
+        box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.51);
+    }
+    50% {
+        width: 10.313rem;
+        height: 10.313rem;
+        border-radius: 25%;
+        background: rgba(104, 0, 0, 0.253);
+        -webkit-box-shadow: 10px 10px 100px -8px rgba(0,0,0,0.51);
+        -moz-box-shadow: 10px 10px 100px -8px rgba(0,0,0,0.51);
+        box-shadow: 10px 10px 5px -100px rgba(0,0,0,0.51);
+    }
+    100% {
+        width: 1.438rem;
+        height: 1.438rem;
+        border-radius: 0%;
+        background: rgba(104, 0, 0, 0);
+        -webkit-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.51);
+        -moz-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.51);
+        box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.51);
+    }
+}

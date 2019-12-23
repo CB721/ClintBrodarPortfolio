@@ -1,0 +1,22 @@
+@import "../../App.scss";
+
+@mixin side-page {
+    background: rgb(255,255,255);
+    @include default-border-radius;
+    overflow: scroll;
+    height: auto;
+    height: 65vh;
+    margin-top: 2.5vh;
+    @include center-content;
+    position: relative;
+}
+
+.side-animate {
+    @include side-page;
+    @include animate-side;
+    @include slide-in-page;
+}
+.side-page {
+    @include side-page;
+}
+
