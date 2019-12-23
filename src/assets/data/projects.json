@@ -17,8 +17,8 @@
             "HTML/CSS"
         ],
         "publishedDate": "Sep 2019",
-        "mainImage": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/assets/images/final-project-walkthrough.gif?raw=true",
-        "secondaryImage": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/assets/images/crm-routing.png?raw=true",
+        "mainImage": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/src/assets/images/final-project-walkthrough.gif?raw=true",
+        "secondaryImage": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/src/assets/images/crm-routing.png?raw=true",
         "tertiaryImage": "",
         "description": "A mock CRM application focused on data analytics and sales team tools.",
         "mainDetails": "This was a very large application to complete in only a few weeks. We were successful because, early on, we divided up the responsibilities so everyone was aware of what they needed to do.",
@@ -59,7 +59,7 @@
             "HTML/CSS"
         ],
         "publishedDate": "Jul 2019",
-        "mainImage": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/assets/images/galaxyhorizons.png?raw=true",
+        "mainImage": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/src/assets/images/galaxyhorizons.png?raw=true",
         "secondaryImage": "",
         "tertiaryImage": "",
         "description": "A custom racing game application.",
@@ -68,7 +68,7 @@
         "tertiaryDetails": "",
         "responsibilities": [
             "Creating the game logic",
-            "Design game environment",
+            "Design game UI/UX",
             "Assisting with user authentication"
         ],
         "userStories": [
@@ -96,7 +96,7 @@
             "HTML/CSS"
         ],
         "publishedDate": "Aug 2019",
-        "mainImage": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/assets/images/google-books3.gif?raw=true",
+        "mainImage": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/src/assets/images/google-books3.gif?raw=true",
         "secondaryImage": "",
         "tertiaryImage": "",
         "description": "An application for discovering and searching for new books.",
@@ -126,7 +126,7 @@
             "HTML/CSS"
         ],
         "publishedDate": "Aug 2019",
-        "mainImage": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/assets/images/mario-memory.gif?raw=true",
+        "mainImage": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/src/assets/images/mario-memory.gif?raw=true",
         "secondaryImage": "",
         "tertiaryImage": "",
         "description": "A memory game featuring Nintendo characters.",
@@ -154,7 +154,7 @@
             "MySQL"
         ],
         "publishedDate": "Jun 2019",
-        "mainImage": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/assets/images/Bamazon-App-Walkthrough.gif?raw=true",
+        "mainImage": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/src/assets/images/Bamazon-App-Walkthrough.gif?raw=true",
         "secondaryImage": "",
         "tertiaryImage": "",
         "description": "A CLI app where the user can view and purchase products. The app will take in the order and remove the stock from the inventory.",
@@ -182,8 +182,8 @@
             "Firebase DB"
         ],
         "publishedDate": "Jun 2019",
-        "mainImage": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/assets/images/liri-images/liri.gif?raw=true",
-        "secondaryImage": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/assets/images/liri-images/spotify-this-song.png?raw=true",
+        "mainImage": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/src/assets/images/liri-images/liri.gif?raw=true",
+        "secondaryImage": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/src/assets/images/liri-images/spotify-this-song.png?raw=true",
         "tertiaryImage": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/assets/images/liri-images/concert-this.png?raw=true",
         "description": "LIRI (Language Interpretation and Recognition Interface) is a CLI app that will search Spotify's API for songs, Bands In Town's API for concerts and OMDB's API for movies.",
         "mainDetails": "This was my first project in Node. Working solely in the command line was different at first but, in the end, I found it much more efficient for testing in comparison to using the console log on a browser.",
@@ -210,7 +210,7 @@
             "HTML/CSS"
         ],
         "publishedDate": "May 2019",
-        "mainImage": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/assets/images/hikerApp.png?raw=true",
+        "mainImage": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/src/assets/images/hikerApp.png?raw=true",
         "secondaryImage": "",
         "tertiaryImage": "",
         "description": "An application for outdoor enthusiasts and the casual hiker to locate nearby trails.",
@@ -243,7 +243,7 @@
             "Firebase DB"
         ],
         "publishedDate": "May 2019",
-        "mainImage": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/assets/images/trainScheduler.png?raw=true",
+        "mainImage": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/src/assets/images/trainScheduler.png?raw=true",
         "secondaryImage": "",
         "tertiaryImage": "",
         "description": "An application that provides up-to-date information about trains.",
@@ -271,7 +271,7 @@
             "HTML/CSS"
         ],
         "publishedDate": "Apr 2019",
-        "mainImage": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/assets/images/trivia.png?raw=true",
+        "mainImage": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/src/assets/images/trivia.png?raw=true",
         "secondaryImage": "",
         "tertiaryImage": "",
         "description": "A multipe-choice guessing game about basketball.",
