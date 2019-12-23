@@ -1,6 +1,6 @@
 # Clint Brodar Portfolio
 
-## A portfolio of my projects, social media post and work experience.
+A portfolio of my projects, social media post and work experience made in React.
 
 ## View Project
 [Portfolio](http://cb721.github.io/ClintBrodarPortfolio)

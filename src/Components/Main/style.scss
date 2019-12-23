@@ -13,6 +13,7 @@
     -webkit-box-shadow: -20px -20px 14px 1px rgba($tertiary-highlight-color, 0.5);
     -moz-box-shadow: -20px -20px 14px 1px rgba($tertiary-highlight-color, 0.5);
     box-shadow: -20px -20px 14px 1px rgba($tertiary-highlight-color, 0.5);
+    overflow-x: hidden;
 }
 .header-image {
     display: flex;
@@ -103,3 +104,10 @@
     width: 100%;
 }
 
+@media only screen and (max-width: 500px) {
+    .main-section {
+        -webkit-box-shadow: -20px -20px 14px 1px rgba($tertiary-highlight-color, 0);
+        -moz-box-shadow: -20px -20px 14px 1px rgba($tertiary-highlight-color, 0);
+        box-shadow: -20px -20px 14px 1px rgba($tertiary-highlight-color, 0);
+    }
+}

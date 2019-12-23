@@ -79,7 +79,6 @@ function App() {
   function openModal(event, name) {
     event.preventDefault();
     const openedProject = ProjectsData.filter(project => project.name === name);
-    // console.log(openedProject);
     setProject(openedProject);
     setOpen(true);
   }

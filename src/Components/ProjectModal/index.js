@@ -3,7 +3,6 @@ import { Row, Col } from '../Grid';
 import './style.scss';
 
 function ProjectModal(props) {
-    console.log(props.project[0].name);
     return (
         <div>
             {props.open ? (
