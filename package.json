@@ -35,7 +35,7 @@
   "bugs": {
     "url": "https://github.com/CB721/ClintBrodarPortfolio/issues"
   },
-  "homepage": "https://github.com/CB721/ClintBrodarPortfolio",
+  "homepage": "https://cb721.github.io/ClintBrodarPortfolio",
   "eslintConfig": {
     "extends": "react-app"
   },

@@ -3,35 +3,35 @@
         "title": "Clef Co E-Commerce App",
         "date": "Dec 15, 2019",
         "link": "https://www.linkedin.com/feed/update/urn:li:activity:6612171886644342784/",
-        "path": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/assets/images/clef-co.png?raw=true",
+        "path": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/src/assets/images/clef-co.png?raw=true",
         "type": "project announcements"
     },
     {
         "title": "Devfest Seattle 2019",
         "date": "Sep 22, 2019",
         "link": "https://www.linkedin.com/posts/clint-brodar_gdgseattle-devfest19-devfestseattle-activity-6581767063835160577-dy3Q",
-        "path": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/assets/images/devfest2019.png?raw=true",
+        "path": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/src/assets/images/devfest2019.png?raw=true",
         "type": "events"
     },
     {
         "title": "FCC Social Media Censorship",
         "date": "Aug 18, 2019",
         "link": "https://www.linkedin.com/posts/clint-brodar_white-house-proposal-would-have-fcc-and-ftc-activity-6566341570495418368-VEYs",
-        "path": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/assets/images/fcc-censorship.png?raw=true",
+        "path": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/src/assets/images/fcc-censorship.png?raw=true",
         "type": "tech news"
     },
     {
         "title": "Cliff Effect",
         "date": "Jun 12, 2019",
         "link": "https://www.linkedin.com/feed/update/urn:li:activity:6545042582169276416/",
-        "path": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/assets/images/cliff-effect.png?raw=true",
+        "path": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/src/assets/images/cliff-effect.png?raw=true",
         "type": "personal stories"
     },
     {
         "title": "Hiker App",
         "date": "May 27, 2019",
         "link": "https://www.linkedin.com/feed/update/urn:li:activity:6538847583140487168",
-        "path": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/assets/images/hikerApp.png?raw=true",
+        "path": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/src/assets/images/hikerApp.png?raw=true",
         "type": "project announcements"
     }
 ]
