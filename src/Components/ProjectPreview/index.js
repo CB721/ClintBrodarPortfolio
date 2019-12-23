@@ -1,16 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Row, Col } from '../Grid';
+import Loading from '../Loading';
 import './style.scss';
 
-function Post(props) {
+function Preview(props) {
+    const [loaded, setLoaded] = useState(false);
+
     return (
         <div
             className="project-preview"
-            onClick={(event) => props.openModal(event, props.index)}
+            onClick={(event) => props.openModal(event, props.name)}
         >
             <Row>
                 <Col size="12">
-                    <img src={props.mainImage} alt={props.title} className="project-main-image" />
+                    <img
+                        style={loaded ? {} : { display: 'none' }}
+                        src={props.mainImage}
+                        alt={props.title}
+                        className="project-main-image"
+                        onLoad={() => setLoaded(true)}
+                    />
+                    {
+                        !loaded &&
+                        <div className="center-content">
+                            <Loading />
+                        </div>
+                    }
                 </Col>
                 <Col size="12">
                     <div className="center-content">
@@ -33,4 +48,4 @@ function Post(props) {
     )
 }
 
-export default Post;
+export default Preview;

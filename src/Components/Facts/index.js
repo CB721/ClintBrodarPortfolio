@@ -4,7 +4,7 @@ import './style.scss';
 
 function Facts(props) {
     return (
-        <div className="remove-right-margin fact">
+        <div className="remove-left-margin fact">
             <Row>
                 <Col size="12">
                     <div className="center-content">

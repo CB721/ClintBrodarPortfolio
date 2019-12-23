@@ -3,6 +3,7 @@ import { Row, Col } from '../Grid';
 import './style.scss';
 
 function ProjectModal(props) {
+    console.log(props.project[0].name);
     return (
         <div>
             {props.open ? (
@@ -11,7 +12,7 @@ function ProjectModal(props) {
                     <div className="modal-content-section">
                         <Row>
                             <Col size="12">
-                                <img src={props.project.mainImage} alt={props.project.name} className="project-modal-images" />
+                                <img src={props.project[0].mainImage} alt={props.project[0].name} className="project-modal-images" />
                             </Col>
                         </Row>
                         <Row>
@@ -19,62 +20,77 @@ function ProjectModal(props) {
                             <Col size="10">
                                 <Col size="12">
                                     <h1 className="header-text">
-                                        {props.project.name}
+                                        {props.project[0].name}
                                     </h1>
                                 </Col>
-                                {props.project.type.map((type, index) => (
+                                {props.project[0].type.map((type, index) => (
                                     <Col size="12" key={index}>
-                                        <span className="project-type">
+                                        <span className="project-type-modal">
                                             {type}
                                         </span>
                                     </Col>
                                 ))}
+                                {props.project[0].teamSize > 1 ? (
+                                    <Col size="12">
+                                        <p className="project-headings">
+                                            {props.project[0].teamSize} Member Team
+                                        </p>
+                                    </Col>
+                                ) : (
+                                    <Col size="12">
+                                        <p className="project-headings">
+                                            Solo Project
+                                        </p>
+                                    </Col>
+                                )}
                                 <Col size="12">
-                                    <p className="project-description">
-                                        {props.project.description}
+                                    <p className="project-description center-content">
+                                        {props.project[0].description}
                                     </p>
                                 </Col>
                                 <Col size="12">
-                                    <p>
+                                    <p className="project-headings">
                                         User Stories
                                     </p>
-                                    <ul className="project-ul">
-                                        {props.project.userStories.map((story, index) => (
-                                            <li className="project-li" key={index}>
-                                                {story}
-                                            </li>
-                                        ))}
-                                    </ul>
+                                    <blockquote>
+                                        <ul className="project-ul">
+                                            {props.project[0].userStories.map((story, index) => (
+                                                <li className="project-li add-quotes" key={index}>
+                                                    {story}
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </blockquote>
                                 </Col>
                                 <Col size="12">
                                     <p className="project-main-details">
-                                        {props.project.mainDetails}
+                                        {props.project[0].mainDetails}
                                     </p>
                                 </Col>
-                                {props.project.secondaryImage ? (
+                                {props.project[0].secondaryImage ? (
                                     <Col size="12">
-                                        <img src={props.project.secondaryImage} alt={props.project.name} className="project-modal-images" />
+                                        <img src={props.project[0].secondaryImage} alt={props.project[0].name} className="project-modal-images" />
                                     </Col>
                                 ) : (<div />)}
                                 <Col size="12">
                                     <p className="project-main-details">
-                                        {props.project.secondaryDetails}
+                                        {props.project[0].secondaryDetails}
                                     </p>
                                 </Col>
-                                {props.project.tertiaryDetails ? (
+                                {props.project[0].tertiaryDetails ? (
                                     <Col size="12">
                                         <p className="project-main-details">
-                                            {props.project.tertiaryDetails}
+                                            {props.project[0].tertiaryDetails}
                                         </p>
                                     </Col>
                                 ) : (<div />)}
-                                {props.project.responsibilities.length > 0 ? (
+                                {props.project[0].responsibilities.length > 0 ? (
                                     <Col size="12">
-                                        <p>
+                                        <p className="project-headings">
                                             I was responsible for the following:
                                         </p>
                                         <ul className="project-ul">
-                                            {props.project.responsibilities.map((task, index) => (
+                                            {props.project[0].responsibilities.map((task, index) => (
                                                 <li className="project-li" key={index}>
                                                     {task}
                                                 </li>
@@ -82,22 +98,22 @@ function ProjectModal(props) {
                                         </ul>
                                     </Col>
                                 ) : (<div />)}
-                                {props.project.tertiaryImage ? (
+                                {props.project[0].tertiaryImage ? (
                                     <Col size="12">
-                                        <img src={props.project.tertiaryImage} alt={props.project.name} className="project-modal-images" />
+                                        <img src={props.project[0].tertiaryImage} alt={props.project[0].name} className="project-modal-images" />
                                     </Col>
                                 ) : (<div />)}
                                 <Col size="12">
                                     <p className="project-challenge">
-                                        {props.project.challenge}
+                                        {props.project[0].challenge}
                                     </p>
                                 </Col>
                                 <Col size="12">
-                                    <p>
+                                    <p className="project-headings">
                                         Technologies used:
                                     </p>
                                     <ul className="project-ul">
-                                        {props.project.technologies.map((tech, index) => (
+                                        {props.project[0].technologies.map((tech, index) => (
                                             <li className="project-li" key={index}>
                                                 {tech}
                                             </li>
@@ -108,12 +124,12 @@ function ProjectModal(props) {
                                     <div className="horizontal-line" />
                                 </Col>
                                 <div className="project-links">
-                                    {props.project.secondRepoLink ? (
+                                    {props.project[0].secondRepoLink ? (
                                         <Col size="12">
                                             <Row>
                                                 <Col size="4">
                                                     <div className="center-content">
-                                                        <a href={props.project.deployedLink}>
+                                                        <a href={props.project[0].deployedLink}>
                                                             <h5>
                                                                 View Project
                                                         </h5>
@@ -122,7 +138,7 @@ function ProjectModal(props) {
                                                 </Col>
                                                 <Col size="4">
                                                     <div className="center-content">
-                                                        <a href={props.project.repoLink}>
+                                                        <a href={props.project[0].repoLink}>
                                                             <h5>
                                                                 View Main Repo
                                                             </h5>
@@ -131,7 +147,7 @@ function ProjectModal(props) {
                                                 </Col>
                                                 <Col size="4">
                                                     <div className="center-content">
-                                                        <a href={props.project.secondRepoLink}>
+                                                        <a href={props.project[0].secondRepoLink}>
                                                             <h5>
                                                                 View Second Repo
                                                         </h5>
@@ -145,7 +161,7 @@ function ProjectModal(props) {
                                                 <Row>
                                                     <Col size="6">
                                                         <div className="center-content">
-                                                            <a href={props.project.deployedLink}>
+                                                            <a href={props.project[0].deployedLink}>
                                                                 <h5>
                                                                     View Project
                                                         </h5>
@@ -154,7 +170,7 @@ function ProjectModal(props) {
                                                     </Col>
                                                     <Col size="6">
                                                         <div className="center-content">
-                                                            <a href={props.project.repoLink}>
+                                                            <a href={props.project[0].repoLink}>
                                                                 <h5>
                                                                     View Repo
                                                             </h5>

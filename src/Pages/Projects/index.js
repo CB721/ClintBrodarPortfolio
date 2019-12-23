@@ -5,9 +5,7 @@ import Loading from '../../Components/Loading';
 import './style.scss';
 
 function Projects(props) {
-    useEffect(() => {
-
-    }, [props])
+    useEffect(() => {}, [props.ProjectsData]);
     return (
         <div className="page-section-border">
             <div className="page-section">
@@ -39,7 +37,7 @@ function Projects(props) {
                                         onClick={(event) => props.changeProjectCategory(event, 1)}
                                     >
                                         <p>
-                                            Front-end
+                                            Front End
                                         </p>
                                     </div>
                                 </Col>
@@ -49,7 +47,7 @@ function Projects(props) {
                                         onClick={(event) => props.changeProjectCategory(event, 2)}
                                     >
                                         <p>
-                                            Back-end
+                                            Back End
                                         </p>
                                     </div>
                                 </Col>
@@ -81,7 +79,6 @@ function Projects(props) {
                                     name={project.name}
                                     types={project.type}
                                     openModal={props.openModal}
-                                    index={index}
                                 />
                             </Col>
                         ))}

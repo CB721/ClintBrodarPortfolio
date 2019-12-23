@@ -17,11 +17,8 @@ function About(props) {
                     </Col>
                 </Row>
                 <Row>
-                    <Col size="sm-1 12">
-                        <div className="vertical-line" />
-                    </Col>
                     <Col size="sm-11 12">
-                        <div className="remove-right-margin personal-desc">
+                        <div className="remove-left-margin personal-desc">
                             <p>
                                 I am Clint Brodar. I was born and raised in Cleveland, OH. In college, I was in the Recording Arts & Technology program where I studied music engineering and production.
                             </p>
@@ -70,11 +67,9 @@ function About(props) {
                     </Col>
                 </Row>
                 <Row>
-                    <Col size="sm-1 12">
-                        <div className="vertical-line" />
-                    </Col>
                     <Col size="sm-11 12">
                         <Row>
+                            <div className="center-content">
                             {FactData.map((fact, index) => (
                                 <Col size="3" key={index}>
                                     <Facts
@@ -83,6 +78,7 @@ function About(props) {
                                     />
                                 </Col>
                             ))}
+                            </div>
                         </Row>
                     </Col>
                 </Row>

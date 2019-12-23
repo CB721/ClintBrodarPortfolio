@@ -61,15 +61,15 @@
 }
 .profile-image-section {
     position: relative;
-    top: -27vh;
     display: flex;
     z-index: 5;
     align-items: flex-end;
     justify-content: center;
 }
 .profile-image {
-    height: 29.45vh;
-    width: 13.5vw;
+    position: absolute;
+    height: 14.45rem;
+    width: auto;
     border-radius: 100%;
     border: 5px solid white;
     -webkit-box-shadow: -8px 8px 5px 3.5px rgba($highlight-color, 0.5);

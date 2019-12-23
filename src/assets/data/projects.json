@@ -21,7 +21,7 @@
         "secondaryImage": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/assets/images/crm-routing.png?raw=true",
         "tertiaryImage": "",
         "description": "A mock CRM application focused on data analytics and sales team tools.",
-        "mainDetails": "This was a very large application to complete in only a few weeks. We were successful because, early on, we divided up the responsibilities so everyone was aware of what they needed to do. This was a very large application to complete in only a few weeks. We were successful because, early on, we divided up the responsibilities so everyone was aware of what they needed to do.",
+        "mainDetails": "This was a very large application to complete in only a few weeks. We were successful because, early on, we divided up the responsibilities so everyone was aware of what they needed to do.",
         "secondaryDetails": "Once I had all of the schemas connected to each other, I then needed to generate analytics. I focused on sales analytics as that is the most important thing for a business. Through this process, I learned about the power of aggregate functions in MongoDB. Because a business may want to view  different time sets of data, I wanted to create as much flexibility as I could. In order to generate date ranges, I used Moment.js.",
         "tertiaryDetails": "The user also can view a pie chart with all of the products based on quantity sold. By  clicking on the name of them, they can simulate what sales would be like without that particular product. The user can search for an employee by name and get individual statistics.",
         "responsibilities": [
@@ -62,7 +62,7 @@
         "mainImage": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/assets/images/galaxyhorizons.png?raw=true",
         "secondaryImage": "",
         "tertiaryImage": "",
-        "description": "An application for playing a custom racing game.",
+        "description": "A custom racing game application.",
         "mainDetails": "Our team wanted to take on the challenge of creating a video game. Before this project, I had never attempted to make a video game before. When we started off, we wanted to use the PlayCanvas game engine because it was writen in JavaScript. However, we soon discovered that the documentation was outdated.",
         "secondaryDetails": "We then had to had to pivot to using the Unity game engine which used C#. I did not have experience using C# prior, so, as the game developer, I had to quickly learn enough to create the game logic.",
         "tertiaryDetails": "",
@@ -75,7 +75,7 @@
             "As a user, I want to play a visually-pleasing and exciting racing game.",
             "As a user, when I play the game, I want to keep track of my time."
         ],
-        "challenge": "My biggest challenge in this project was taking on a leadership role. Normally, I am more comfortable in taking instructions instead of making them. The most important lesson I took from this experience was that everyone has different strengths and that a good leader supports those as opposed to focusing on weaknesses.",
+        "challenge": "My biggest challenge in this project was taking on a leadership role. Normally, I am more comfortable in taking instructions instead of making them. The most important lesson I took from this experience was that everyone has different strengths and that a good leader supports those strengths as opposed to focusing on weaknesses.",
         "deployedLink": "https://guarded-retreat-41889.herokuapp.com",
         "repoLink": "https://github.com/CB721/project-altavista",
         "secondRepoLink": "https://github.com/CB721/galaxy-horizons",
@@ -220,7 +220,7 @@
         "responsibilities": [
             "Configuring Google's Geolocation API",
             "Set up Axios in jQuery",
-            "Assisting with website design"
+            "Assisting with UX/UI design"
         ],
         "userStories": [
             "As a user, I want to go on a hike, but I only want to travel a certain distance there and back. That requires a lot of research, and there aren't any easy-to-use resourses online."

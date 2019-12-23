@@ -35,6 +35,7 @@ function App() {
   function changeProjectCategory(event, category) {
     event.preventDefault();
     setCategory(category);
+    setProject("");
     let filteredProducts = [];
     switch (category) {
       case 0:
@@ -75,9 +76,11 @@ function App() {
         return;
     }
   }
-  function openModal(event, index) {
+  function openModal(event, name) {
     event.preventDefault();
-    setProject(ProjectsData[index]);
+    const openedProject = ProjectsData.filter(project => project.name === name);
+    // console.log(openedProject);
+    setProject(openedProject);
     setOpen(true);
   }
   function closeModal(event) {
@@ -140,11 +143,13 @@ function App() {
           </Col>
         </Row>
       </div>
-      <ProjectModal
-        project={project}
-        open={open}
-        closeModal={closeModal}
-      />
+      {open ? (
+        <ProjectModal
+          project={project}
+          open={open}
+          closeModal={closeModal}
+        />
+      ) : (<div />)}
     </div>
   );
 }

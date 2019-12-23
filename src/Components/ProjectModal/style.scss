@@ -39,6 +39,35 @@
 .project-links {
     padding: 15px 0 15px 0;
 }
+.project-type-modal {
+    font-size: 16px;
+    font-style: italic;
+}
+.project-description {
+    font-size: 24px;
+}
+.project-ul {
+    list-style-type: square;
+    .project-li {
+        font-size: 16px;
+    }
+    .add-quotes {
+        font-style: italic;
+        &:before {
+            content: open-quote;
+        }
+        &:after {
+            content: close-quote;
+        }
+    }
+}
+.project-main-details {
+    font-size: 16px;
+}
+.project-headings {
+    font-size: 20px;
+    font-weight: bold;
+}
 
 @keyframes expand-in {
     0% {
