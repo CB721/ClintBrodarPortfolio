@@ -3,6 +3,7 @@
 
 .main-section {
     background: white;
+    position: relative;
     @include default-border-radius;
     overflow: scroll;
     height: 70vh;
@@ -102,6 +103,12 @@
 .contact-button-area {
     height: auto;
     width: 100%;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
 }
 
 @media only screen and (max-width: 500px) {

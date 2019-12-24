@@ -19,10 +19,17 @@ function App() {
   const [category, setCategory] = useState(0);
   const [project, setProject] = useState();
   const [open, setOpen] = useState(false);
+  const [bounceNav, setBounceNav] = useState(false);
+  const [navClass, setNavClass] = useState("side-menu");
 
   useEffect(() => {
     setProject(ProjectsData);
   }, []);
+  useEffect(() => {
+    setTimeout(() => {
+      toggleBounce();
+    }, 72192);
+  });
 
   function switchPage(event, page) {
     event.preventDefault();
@@ -87,6 +94,21 @@ function App() {
     setOpen(false);
     setProject(ProjectsData);
   }
+  function navBounce(event) {
+    event.preventDefault();
+    setBounceNav(true);
+  }
+  function toggleBounce() {
+    if (bounceNav) {
+      setNavClass("side-menu");
+      setTimeout(() => {
+        setBounceNav(false);
+        toggleBounce();
+      }, 72192);
+    } else {
+      setNavClass("side-menu-bounce");
+    }
+  }
   return (
     <div className="app-background">
       <Cube />
@@ -95,6 +117,8 @@ function App() {
           <Col size="md-1 12">
             <SideNav
               switchPage={switchPage}
+              navBounce={navBounce}
+              navClass={navClass}
             />
           </Col>
           <Col size="md-11 12">

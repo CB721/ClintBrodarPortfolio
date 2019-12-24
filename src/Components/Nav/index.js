@@ -4,7 +4,10 @@ import './style.scss';
 
 function sideNav(props) {
     return (
-        <div className="side-menu ">
+        <div
+            className={props.navClass}
+            onClick={(event) => props.navBounce(event)}
+        >
             <div
                 className="menu-item center-content"
                 onClick={(event) => props.switchPage(event, 0)}
