@@ -4,7 +4,7 @@ import Facts from '../../Components/Facts';
 import FactData from '../../assets/data/factData.json';
 import './style.scss';
 
-function About(props) {
+function About() {
     return (
         <div className="page-section-border">
             <div className="page-section">

@@ -1,12 +1,22 @@
 @import "../../App.scss";
 
-.side-menu {
+@mixin nav {
     position: relative;
     display: block;
     width: 100%;
     height: 300px;
     @include default-border-radius;
     background: white;
+}
+.side-menu {
+    @include nav;
+}
+.side-menu-bounce {
+    @include nav;
+    animation-name: bounce;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
 }
 .menu-item {
     width: 100%;
@@ -38,8 +48,27 @@
     color: $highlight-color;
     font-size: 16px;
 }
+@keyframes bounce {
+    0% {
+        top: 0%;
+    }
+    25% {
+        top: 3%;
+    }
+    50% {
+        top: 0%;
+    }
+    75% {
+        top: 5%;
+    }
+    100% {
+        top: 0%;
+    }
+}
+
+
 @media only screen and (max-width: 1200px) {
-    .side-menu {
+    .side-menu, .side-menu-bounce {
         display: block;
     }
     .fas, .fab {
@@ -50,7 +79,7 @@
     }
 }
 @media only screen and (max-width: 990px) {
-    .side-menu {
+    .side-menu, .side-menu-bounce {
         display: block;
     }
     .fas, .fab {
@@ -61,7 +90,7 @@
     }
 }
 @media only screen and (max-width: 769px) {
-    .side-menu {
+    .side-menu, .side-menu-bounce {
         display: flex;
         height: 100%;
         width: 100%;
@@ -88,7 +117,7 @@
     }
 }
 @media only screen and (max-width: 501px) {
-    .side-menu {
+    .side-menu, .side-menu-bounce {
         margin-bottom: 20px;
         height: auto;
         width: 100%;

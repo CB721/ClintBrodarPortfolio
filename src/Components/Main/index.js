@@ -43,33 +43,35 @@ function Main(props) {
                         </div>
                     </div>
                 </Col>
-                <Col size="12">
-                    <Row>
-                        <Col size="5">
-                            <div className="horizontal-line remove-left-margin" />
-                            <div className="main-contact-section remove-left-margin">
-                                <a href="https://docs.google.com/document/d/1KgyORb4xePMjWTB2FjAQ30-Plnfo0qXCAQuDC9RowzU/export?format=pdf" download>
-                                    <h5>
-                                        Resume
+                <div className="footer">
+                    <Col size="12">
+                        <Row>
+                            <Col size="5">
+                                <div className="horizontal-line remove-left-margin" />
+                                <div className="main-contact-section remove-left-margin">
+                                    <a href="https://docs.google.com/document/d/1KgyORb4xePMjWTB2FjAQ30-Plnfo0qXCAQuDC9RowzU/export?format=pdf" download>
+                                        <h5>
+                                            Resume
                                     </h5>
-                                </a>
-                            </div>
-                        </Col>
-                        <Col size="2">
-                            <div className="center-content">
-                                <div className="vertical-line" />
-                            </div>
-                        </Col>
-                        <Col size="5">
-                            <div className="horizontal-line remove-right-margin" />
-                            <div className="main-contact-section remove-right-margin" onClick={(event) => props.switchPage(event, 3)}>
-                                <h5>
-                                    Contact Me
+                                    </a>
+                                </div>
+                            </Col>
+                            <Col size="2">
+                                <div className="center-content">
+                                    <div className="vertical-line" />
+                                </div>
+                            </Col>
+                            <Col size="5">
+                                <div className="horizontal-line remove-right-margin" />
+                                <div className="main-contact-section remove-right-margin" onClick={(event) => props.switchPage(event, 3)}>
+                                    <h5>
+                                        Contact Me
                                 </h5>
-                            </div>
-                        </Col>
-                    </Row>
-                </Col>
+                                </div>
+                            </Col>
+                        </Row>
+                    </Col>
+                </div>
             </Row>
         </div>
     )

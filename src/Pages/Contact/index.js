@@ -16,32 +16,28 @@ function Contact(props) {
                 </Row>
                 <div className="contact-section">
                     <Row>
-                        <Col size="sm-1 12">
-                            <div className="vertical-line" />
+                        <Col size="12">
+                            <img src="https://images.unsplash.com/uploads/1413222992504f1b734a6/1928e537?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="contact" className="project-modal-images" />
                         </Col>
-                        <Col size="sm-11 12">
-                            <Row>
-                                <Col size="12">
-                                    <div className="center-content">
-                                        <p>
-                                            <strong>
-                                                Email. . . . .
+                        <Col size="12">
+                            <div className="center-content">
+                                <p>
+                                    <strong>
+                                        Email. . . . .
                                             </strong>
-                                            clintbrodar@gmail.com
+                                    clintbrodar@gmail.com
                                         </p>
-                                    </div>
-                                </Col>
-                                <Col size="12">
-                                    <div className="center-content">
-                                        <p>
-                                            <strong>
-                                                Phone. . . . .
+                            </div>
+                        </Col>
+                        <Col size="12">
+                            <div className="center-content">
+                                <p>
+                                    <strong>
+                                        Phone. . . . .
                                             </strong>
-                                            (206) 488-3956
+                                    (206) 488-3956
                                         </p>
-                                    </div>
-                                </Col>
-                            </Row>
+                            </div>
                         </Col>
                     </Row>
                 </div>
