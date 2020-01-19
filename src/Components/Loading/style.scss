@@ -22,13 +22,13 @@
 @keyframes loading {
     0% {
         transform: rotate(0deg);
-        left: -42.5%;
+        left: -37.5%;
     }
     25% {
         left: 0%;
     }
     50% {
-        left: 42.5%;
+        left: 37.5%;
         transform: rotate(360deg);
     }
     75% {
@@ -36,6 +36,6 @@
     }
     100% {
         transform: rotate(0deg);
-        left: -42.5%;
+        left: -37.5%;
     }
 }

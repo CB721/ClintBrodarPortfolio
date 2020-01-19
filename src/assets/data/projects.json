@@ -174,6 +174,38 @@
         ]
     },
     {
+        "name": "Node Adventure Game",
+        "teamSize": 1,
+        "technologies": [
+            "JavaScript",
+            "Node.js",
+            "Jest",
+            "Inquirer",
+            "Figlet",
+            "Colors"
+        ],
+        "publishedDate": "Jan 2020",
+        "mainImage": "https://github.com/CB721/node-adventure-game/blob/master/assets/adventure-walkthrough.gif?raw=true",
+        "secondaryImage": "",
+        "tertiaryImage": "",
+        "description": "A CLI adventure game application where you can select a character, battle enemies and play side missions.",
+        "mainDetails": "My main goal for this project was to create a code base that was a modular as possible.  Any time I found myself copy pasting a section ofcode, I separated it into its own function.",
+        "secondaryDetails": "",
+        "tertiaryDetails": "",
+        "responsibilities": [],
+        "userStories": [
+            "As a user, I want to play a game that progressively gets more difficult.",
+            "As a user, I want to save my progress I go through the game."
+        ],
+        "challenge": "Configuring tests to run.  My previous experience with tests had only been on a couple of basic functions.  Using Jest, I was able to run tests on minor details like what was console logged and that a function return a valid value.",
+        "deployedLink": "",
+        "repoLink": "https://github.com/CB721/node-adventure-game",
+        "secondRepoLink": "",
+        "type": [
+            "Back End"
+        ]
+    },
+    {
         "name": "LIRI",
         "teamSize": 1,
         "technologies": [
@@ -186,7 +218,7 @@
         "secondaryImage": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/src/assets/images/liri-images/spotify-this-song.png?raw=true",
         "tertiaryImage": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/assets/images/liri-images/concert-this.png?raw=true",
         "description": "LIRI (Language Interpretation and Recognition Interface) is a CLI app that will search Spotify's API for songs, Bands In Town's API for concerts and OMDB's API for movies.",
-        "mainDetails": "This was my first project in Node. Working solely in the command line was different at first but, in the end, I found it much more efficient for testing in comparison to using the console log on a browser.",
+        "mainDetails": "This was my first project in Node. Working solely in the command line was different at first but, in the end, I found it more efficient for testing in comparison to using the console log on a browser.",
         "secondaryDetails": "I challenged myself in this project to implement an error log of all invalid searches. To achieve this, I created a Firebase database and had every search logged there.",
         "tertiaryDetails": "",
         "responsibilities": [],

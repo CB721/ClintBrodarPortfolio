@@ -52,7 +52,7 @@ function Main(props) {
                                     <a href="https://docs.google.com/document/d/1KgyORb4xePMjWTB2FjAQ30-Plnfo0qXCAQuDC9RowzU/export?format=pdf" download>
                                         <h5>
                                             Resume
-                                    </h5>
+                                        </h5>
                                     </a>
                                 </div>
                             </Col>
@@ -66,7 +66,7 @@ function Main(props) {
                                 <div className="main-contact-section remove-right-margin" onClick={(event) => props.switchPage(event, 3)}>
                                     <h5>
                                         Contact Me
-                                </h5>
+                                    </h5>
                                 </div>
                             </Col>
                         </Row>
