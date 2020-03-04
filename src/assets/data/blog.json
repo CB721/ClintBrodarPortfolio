@@ -1,10 +1,17 @@
 [
     {
+        "title": "First Class End",
+        "date": "Feb 26, 2019",
+        "link": "https://www.linkedin.com/feed/update/urn:li:activity:6638863690605084672/",
+        "path": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/src/assets/images/first-class.jpg?raw=true",
+        "type": "events"
+    },
+    {
         "title": "Palindrome Date",
         "date": "Feb 2, 2019",
         "link": "https://www.linkedin.com/feed/update/urn:li:activity:6630007857368698880/",
-        "path": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/src/assets/images/palindrome-date.png?raw=true",
-        "type": "tech news"
+        "path": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/src/assets/images/palindrome-date.jpg?raw=true",
+        "type": "events"
     },
     {
         "title": "Smart Home Collaboration",
@@ -25,6 +32,13 @@
         "date": "Sep 22, 2019",
         "link": "https://www.linkedin.com/posts/clint-brodar_gdgseattle-devfest19-devfestseattle-activity-6581767063835160577-dy3Q",
         "path": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/src/assets/images/devfest2019.png?raw=true",
+        "type": "events"
+    },
+    {
+        "title": "J-CARD CRM App",
+        "date": "Sep 07, 2019",
+        "link": "https://www.linkedin.com/posts/lamanth_webdevelopment-activity-6583428426672279553-IFcj",
+        "path": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/src/assets/images/crm.png?raw=true",
         "type": "events"
     },
     {
