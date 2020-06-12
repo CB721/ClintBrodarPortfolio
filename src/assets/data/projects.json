@@ -1,5 +1,57 @@
 [
     {
+        "name": "Clef Co",
+        "teamSize": 1,
+        "technologies": [
+            "React.js",
+            "Node.js",
+            "MySQL",
+            "JavaScript",
+            "HTML/CSS",
+            "Local/Session Storage",
+            "Express.js",
+            "Passport.js",
+            "Material-UI",
+            "React Bootstrap",
+            "Moment.js",
+            "React-textfit",
+            "React-reveal",
+            "React-toastify",
+            "Glamor CSS",
+            "React-player",
+            "React-star-ratings"
+        ],
+        "publishedDate": "Dec 2019",
+        "mainImage": "https://github.com/CB721/clef-co/blob/master/Walkthrough/clef-co-walkthrough1.gif?raw=true",
+        "secondaryImage": "https://github.com/CB721/clef-co/blob/master/Assets/table-relations.png?raw=true",
+        "tertiaryImage": "",
+        "description": "Clef Co is a mock E-commerce application based on musical instruments, audio equipment and recording software.",
+        "mainDetails": "There is a home page where the user is greeted with the company name over a video background.  As they scroll down, they are presented with top selling products, reviews from other users and, if they are logged in, the last three products they viewed.  On the products page, the user is shown the most recently added product, a collection of product bundles and links to contact support, view tutorials and view their cart.  On the shop page, the user can view all products, filter by a variety of categories and add items to their cart.  The tutorials page, the user is presented with a list of videos embedded on the page.  On the contact page, the user can submit support tickets for items they have purchased.  On the search page, the user can search for products, previously submitted contact forms and orders.  Each product has it's own page where the user can view more details on that product, add it to their cart and view/leave reviews.",
+        "secondaryDetails": "Because every schema on this application relates to at least one other table, I used SQL. In order to avoid any future security risks from using an ORM tool like Sequelize, I wrote out my SQL queries. Also, because I was writing complex queries, I was able to test them out in MySQL Workbench without having the server running.",
+        "tertiaryDetails": "On the profile page, the user is presented with their personal information and can update it.  They are also shown a news feed which is populated with information about previous orders, reviews and a monthly message from the company.  The user is shown their current status based on how long they have had an account.  After this, the user can view all of their past orders in more detail.  On the bottom of the page, the user is presented with an option to delete their account.  On the cart page, the user can delete items from their cart, change the quantities and view the total cost including shipping.  They will then be prompted for their address and credit card information.  Finally, they can view all of the details and checkout.",
+        "responsibilities": [
+            "Creating the the inital wireframes and mockups",
+            "Setting up the API",
+            "Setting up user authentication",
+            "Manager task assignment and analytics components"
+        ],
+        "userStories": [
+            "As a customer, I want to browse a site and find all kinds of instruments, music gear and tech.",
+            "As a customer, I want to order products and browse my previous orders.",
+            "As a customer, I want to easily access tutorials and contact support for products I previously ordered.",
+            "As a business, I need to sell our products online.",
+            "As a business, I need to keep track of data on our users.",
+            "As a business, I need to keep track of data about our products."
+        ],
+        "challenge": "Prior to this project, all of my experience creating components in React was doing so using Class Components.  For this project, I challenged myself to learn to use Functional Components using Hooks.  I particulariy struggled with the useEffect hook and how to prevent a component from constantly refresing.",
+        "deployedLink": "https://virtual-store-react.herokuapp.com/",
+        "repoLink": "https://github.com/CB721/clef-co",
+        "secondRepoLink": "",
+        "type": [
+            "Full Stack"
+        ]
+    },
+    {
         "name": "JCARD Brewery Solutions",
         "teamSize": 5,
         "technologies": [
