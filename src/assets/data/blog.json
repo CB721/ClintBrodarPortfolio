@@ -1,14 +1,21 @@
 [
     {
+        "title": "Master SQL for Data Science",
+        "date": "Jun 11, 2020",
+        "link": "https://www.linkedin.com/posts/clint-brodar_udemy-course-completion-certificate-activity-6676912435561160704-F636",
+        "path": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/src/assets/images/sql-data-science.jpg?raw=true",
+        "type": "learning"
+    },
+    {
         "title": "First Class End",
-        "date": "Feb 26, 2019",
+        "date": "Feb 26, 2020",
         "link": "https://www.linkedin.com/feed/update/urn:li:activity:6638863690605084672/",
         "path": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/src/assets/images/first-class.jpg?raw=true",
         "type": "events"
     },
     {
         "title": "Palindrome Date",
-        "date": "Feb 2, 2019",
+        "date": "Feb 2, 2020",
         "link": "https://www.linkedin.com/feed/update/urn:li:activity:6630007857368698880/",
         "path": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/src/assets/images/palindrome-date.jpg?raw=true",
         "type": "events"
