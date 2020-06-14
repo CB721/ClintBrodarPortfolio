@@ -1,5 +1,57 @@
 [
     {
+        "name": "G-List",
+        "teamSize": 1,
+        "technologies": [
+            "React.js",
+            "Node.js",
+            "MySQL",
+            "JavaScript",
+            "HTML/SCSS",
+            "SASS",
+            "Express.js",
+            "React Beautiful DND",
+            "Shards React",
+            "Axios.js",
+            "Moment.js",
+            "Validator",
+            "React-reveal",
+            "React-toastify",
+            "Glamor CSS",
+            "Mongoose/MongoDB",
+            "Nodemailer",
+            "CORS",
+            "Bcrypt"
+        ],
+        "publishedDate": "Mar 2020",
+        "mainImage": "https://github.com/CB721/grocery-list-front/blob/master/assets/wireframes:mockups/g-list-profile.png?raw=true",
+        "secondaryImage": "https://github.com/CB721/grocery-list-front/blob/master/assets/wireframes:mockups/ERD.png?raw=true",
+        "tertiaryImage": "https://github.com/CB721/grocery-list-front/blob/master/assets/wireframes:mockups/g-list-dark-mode.png?raw=true",
+        "description": "An application for users to create custom grocery lists based on the stores where they shop.",
+        "mainDetails": "The user can search for stores based on their location or enter a custom store, create lists and add items to it, and mark items as purchased. The user can also share lists with friends and family that they connect with.",
+        "secondaryDetails": "Most of the tables in the database relate to at least one other table if not multiple.  In order to get the best performance, I used SQL to accomplish this.  The entire application is build around the user: when they joined or if they are using the dark mode feature, which other users they are connected with, which lists they have created.  Return the data needed, required a series of complex queries.  I used SQL procedures for two reasons: to improve on the speed of each complex query as well as to remove excess clutter from the back end code.",
+        "tertiaryDetails": "Since the main purpose of this application is use it on a phone and mark items as complete as you shop, I gave the user to save the application to their home screen as a Progressive Web Application.  Also, the user can still add, update and delete items while their device is offline using Indexed DB.",
+        "responsibilities": [
+            "Creating the the inital wireframes and mockups",
+            "Setting up the API routing and writing custom SQL queries",
+            "Setting up user authentication including session cookies",
+            "UI/UX design",
+            "Converting the application to a PWA for better mobile performance"
+        ],
+        "userStories": [
+            "As a user, I want to create grocery lists and specify where I'll buy and how urgently I need each item.",
+            "As a user, I want to filter by store when I go shopping.",
+            "As a user, I want to connect with friends and family members to send and receive grocery lists."
+        ],
+        "challenge": "My main challenge in this project was creating a dark mode for the user.  I was defining all of the colors for the app all on file and importing that file everywhere else to access them.  Logically, I figured that instead of creating duplicate versions of the CSS, I assumed I could change the colors in one place and it would subsequently update everywhere else.  After multiple experimentations, I was able to figure it out.",
+        "deployedLink": "https://g-list-cb.herokuapp.com/",
+        "repoLink": "https://github.com/CB721/grocery-list-front",
+        "secondRepoLink": "https://github.com/CB721/grocery-list-back",
+        "type": [
+            "Full Stack"
+        ]
+    },
+    {
         "name": "Clef Co",
         "teamSize": 1,
         "technologies": [
@@ -32,8 +84,7 @@
         "responsibilities": [
             "Creating the the inital wireframes and mockups",
             "Setting up the API",
-            "Setting up user authentication",
-            "Manager task assignment and analytics components"
+            "Setting up user authentication"
         ],
         "userStories": [
             "As a customer, I want to browse a site and find all kinds of instruments, music gear and tech.",
