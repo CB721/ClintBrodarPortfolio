@@ -33,13 +33,17 @@
         cursor: pointer;
         background: $highlight-color;
         transition: 0.5s;
-        .fas, .fab, .menu-titles {
+        .fas,
+        .fab,
+        .menu-titles {
             color: white;
             transition: 0.5s;
         }
     }
 }
-.fas, .fab, svg {
+.fas,
+.fab,
+svg {
     margin-top: 10px;
     font-size: 32px;
     color: $highlight-color;
@@ -66,12 +70,13 @@
     }
 }
 
-
 @media only screen and (max-width: 1200px) {
-    .side-menu, .side-menu-bounce {
+    .side-menu,
+    .side-menu-bounce {
         display: block;
     }
-    .fas, .fab {
+    .fas,
+    .fab {
         font-size: 28px;
     }
     .menu-titles {
@@ -79,10 +84,12 @@
     }
 }
 @media only screen and (max-width: 990px) {
-    .side-menu, .side-menu-bounce {
+    .side-menu,
+    .side-menu-bounce {
         display: block;
     }
-    .fas, .fab {
+    .fas,
+    .fab {
         font-size: 24px;
     }
     .menu-titles {
@@ -90,7 +97,8 @@
     }
 }
 @media only screen and (max-width: 769px) {
-    .side-menu, .side-menu-bounce {
+    .side-menu,
+    .side-menu-bounce {
         display: flex;
         height: 100%;
         width: 100%;
@@ -108,7 +116,8 @@
             border-bottom-left-radius: 0px;
         }
     }
-    .fas, .fab {
+    .fas,
+    .fab {
         font-size: 32px;
     }
     .menu-titles {
@@ -117,8 +126,8 @@
     }
 }
 @media only screen and (max-width: 501px) {
-    .side-menu, .side-menu-bounce {
-        margin-bottom: 20px;
+    .side-menu,
+    .side-menu-bounce {
         height: auto;
         width: 100%;
         z-index: 7;

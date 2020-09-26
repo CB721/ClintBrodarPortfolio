@@ -114,21 +114,26 @@ function App() {
       <Cube />
       <div className="container">
         <Row>
-          <Col size="md-1 12">
+          <Col size="lg-1 12">
             <SideNav
               switchPage={switchPage}
               navBounce={navBounce}
               navClass={navClass}
             />
           </Col>
-          <Col size="md-11 12">
+          {window.screen.availWidth < 769 ? (
+            <Col size="12">
+              <div style={{ height: "2.5vh" }} />
+            </Col>
+          ) : (<></>)}
+          <Col size="lg-11 12">
             <Row>
-              <Col size="md-6 12">
+              <Col size="lg-6 12">
                 <Main
                   switchPage={switchPage}
                 />
               </Col>
-              <Col size="md-6 12">
+              <Col size="lg-6 12">
                 {section === 0 ? (
                   <SidePage
                     slide={slide}
@@ -162,6 +167,11 @@ function App() {
                   />
                 ) : (<div />)}
               </Col>
+              {window.screen.availWidth < 769 ? (
+                <Col size="12">
+                  <div style={{ height: "2.5vh" }} />
+                </Col>
+              ) : (<></>)}
             </Row>
           </Col>
         </Row>

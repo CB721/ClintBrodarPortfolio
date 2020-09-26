@@ -41,7 +41,7 @@ function About() {
                                         <strong>
                                             Age. . . . .
                                         </strong>
-                                        27
+                                        28
                                     </p>
                                 </div>
                             </Col>
@@ -67,7 +67,7 @@ function About() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col size="sm-11 12">
+                    <Col size="12">
                         <Row>
                             <div className="center-content">
                             {FactData.map((fact, index) => (
