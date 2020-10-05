@@ -36,12 +36,12 @@ function ProjectModal(props) {
                                         </p>
                                     </Col>
                                 ) : (
-                                    <Col size="12">
-                                        <p className="project-headings">
-                                            Solo Project
+                                        <Col size="12">
+                                            <p className="project-headings">
+                                                Solo Project
                                         </p>
-                                    </Col>
-                                )}
+                                        </Col>
+                                    )}
                                 <Col size="12">
                                     <p className="project-description center-content">
                                         {props.project[0].description}
