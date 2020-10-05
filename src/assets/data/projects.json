@@ -1,5 +1,48 @@
 [
     {
+        "name": "Avatar API",
+        "teamSize": 1,
+        "technologies": [
+            "Vue.js",
+            "Node.js",
+            "PostgreSQL",
+            "JavaScript",
+            "HTML/CSS",
+            "Express.js",
+            "Vue Rellax",
+            "Axios.js",
+            "Validator",
+            "CORS",
+            "Bcrypt",
+            "Memory Cache"
+        ],
+        "publishedDate": "Oct 2020",
+        "mainImage": "https://github.com/CB721/ClintBrodarPortfolio/blob/master/src/assets/images/avatar-api.gif?raw=true",
+        "secondaryImage": "",
+        "tertiaryImage": "",
+        "description": "A REST API to retreive information on the TV shows Avatar: The Last Airbender and Avatar: The Legend of Korra. Users can get information on characters, episodes, seasons as well quotes.",
+        "mainDetails": "",
+        "secondaryDetails": "",
+        "tertiaryDetails": "",
+        "responsibilities": [
+            "Collecting and organizing data",
+            "API design",
+            "Generating unique API keys for each user",
+            "UI/UX design",
+            "Creating custom SVG images"
+        ],
+        "userStories": [
+            "As a user, I an API where I can get quotes from my favorite characters."
+        ],
+        "challenge": "",
+        "deployedLink": "https://avatar-the-last-api.herokuapp.com/",
+        "repoLink": "https://github.com/CB721/avatar-api",
+        "secondRepoLink": "https://github.com/CB721/avatar-client",
+        "type": [
+            "Full Stack"
+        ]
+    },
+    {
         "name": "G-List",
         "teamSize": 1,
         "technologies": [
