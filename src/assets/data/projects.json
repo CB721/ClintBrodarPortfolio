@@ -43,6 +43,40 @@
         ]
     },
     {
+        "name": "Tic-Tac-Toe",
+        "teamSize": 1,
+        "technologies": [
+            "Angular.js",
+            "Typescript",
+            "HTML/CSS"
+        ],
+        "publishedDate": "May 2020",
+        "mainImage": "https://github.com/CB721/tic-tac-toe/blob/master/app-assets/images/tic-demo1.gif?raw=true",
+        "secondaryImage": "",
+        "tertiaryImage": "",
+        "description": "An application where two users can play a classic Tic-tac-toe game.",
+        "mainDetails": "",
+        "secondaryDetails": "",
+        "tertiaryDetails": "",
+        "responsibilities": [
+            "Implementing game logic",
+            "Saving user moves to local storage",
+            "UI/UX design"
+        ],
+        "userStories": [
+            "As a user, I want to play a game of Tic-Tac-Toe with a friend.",
+            "As a user, I want to save the progress of my game as I play.",
+            "As a user, I want to view previous matches."
+        ],
+        "challenge": "",
+        "deployedLink": "https://cb721.github.io/tic-tac-toe/",
+        "repoLink": "https://github.com/CB721/tic-tac-toe",
+        "secondRepoLink": "",
+        "type": [
+            "Front End"
+        ]
+    },
+    {
         "name": "G-List",
         "teamSize": 1,
         "technologies": [
